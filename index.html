@@ -1,0 +1,2151 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rappi Gabriella — Jóga · Hangtál · Asztrozófia | Halásztelek</title>
+<meta name="description" content="Rappi Gabriella a Himalájai Jóga Tradíció jógaoktatója Halászteleken. Jóga, hangtálterápia és asztrozófiai elemzés — egy tér, ahol egy időre elcsendesedik a külvilág.">
+<meta name="author" content="Rappi Gabriella">
+<meta name="theme-color" content="#0B1015">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="hu_HU">
+<meta property="og:site_name" content="Rappi Gabriella">
+<meta property="og:title" content="Vissza a csendhez. — Rappi Gabriella">
+<meta property="og:description" content="Jóga · Hangtál · Asztrozófia. Egy tér, ahol egy időre elcsendesedik a külvilág, és újra figyelmet kaphat az, ami belül történik.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=75">
+<meta property="og:image:alt" content="Jóga a ködben, hegyi kilátással — Rappi Gabriella oldala">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vissza a csendhez. — Rappi Gabriella">
+<meta name="twitter:description" content="Jóga · Hangtál · Asztrozófia — Halásztelek.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=75">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%230B1015'/%3E%3Ccircle%20cx='16'%20cy='16'%20r='9'%20fill='none'%20stroke='%23B89769'%20stroke-width='1.4'/%3E%3Ccircle%20cx='16'%20cy='16'%20r='2.4'%20fill='%23B89769'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link rel="preload" as="image" fetchpriority="high"
+      imagesrcset="https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&amp;fit=crop&amp;w=900&amp;q=70 900w,
+                   https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&amp;fit=crop&amp;w=1500&amp;q=72 1500w,
+                   https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&amp;fit=crop&amp;w=2400&amp;q=72 2400w"
+      imagesizes="100vw">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style id="app-css">
+/* =========================================================================
+   Rappi Gabriella — látványterv
+   Csend · Rezgés · Belső egyensúly · Fény · Tér
+   ========================================================================= */
+
+/* ---------- 1. TOKENS ---------- */
+:root{
+  --ink:#0B1015;
+  --ink-deep:#080C10;
+  --ink-soft:#0E141A;
+  --paper:#F2EEE7;
+  --sand:#C9B9A3;
+  --copper:#B89769;
+  --copper-ink:#8A6C43;
+  --sage:#718077;
+
+  --text:rgba(242,238,231,.78);
+  --text-soft:rgba(242,238,231,.56);
+  --line:rgba(242,238,231,.14);
+  --line-soft:rgba(242,238,231,.08);
+
+  --font-display:"Fraunces","Iowan Old Style",Georgia,serif;
+  --font-ui:"Inter","Helvetica Neue",Arial,sans-serif;
+
+  --ease:cubic-bezier(.16,1,.3,1);
+  --ease-soft:cubic-bezier(.22,.61,.36,1);
+
+  --pad:clamp(1.25rem,5vw,5.5rem);
+  --maxw:1560px;
+}
+
+/* ---------- 2. BASE ---------- */
+*,*::before,*::after{box-sizing:border-box}
+
+html{
+  -webkit-text-size-adjust:100%;
+  scroll-behavior:smooth;
+  overflow-x:clip;
+}
+html,body{overflow-x:clip}
+
+body{
+  margin:0;
+  background:var(--ink);
+  color:var(--text);
+  font-family:var(--font-ui);
+  font-size:clamp(1rem,.35vw + .92rem,1.075rem);
+  font-weight:300;
+  line-height:1.75;
+  letter-spacing:.005em;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+}
+
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3,h4{margin:0;font-weight:300}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+ul,ol{margin:0;padding:0;list-style:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+
+::selection{background:rgba(184,151,105,.4);color:#0B1015}
+
+:focus-visible{
+  outline:2px solid var(--copper);
+  outline-offset:5px;
+  border-radius:1px;
+}
+
+section{scroll-margin-top:4.5rem}
+
+@supports (scrollbar-width:thin){
+  html{scrollbar-width:thin;scrollbar-color:rgba(242,238,231,.22) var(--ink)}
+}
+
+.skip-link{
+  position:fixed;top:0;left:0;z-index:200;
+  padding:.9rem 1.4rem;
+  background:var(--paper);color:var(--ink);
+  font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;
+  transform:translateY(-120%);
+  transition:transform .3s var(--ease);
+}
+.skip-link:focus,.skip-link:focus-within{transform:none}
+
+/* ---------- 3. GRAIN ---------- */
+.grain{
+  position:fixed;inset:-60%;
+  z-index:70;pointer-events:none;
+  opacity:.05;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/></filter><rect width='260' height='260' filter='url(%23n)'/></svg>");
+  background-size:260px 260px;
+  animation:grainShift 1.05s steps(5) infinite;
+  will-change:transform;
+}
+@keyframes grainShift{
+  0%{transform:translate3d(0,0,0)}
+  20%{transform:translate3d(-6%,4%,0)}
+  40%{transform:translate3d(4%,-5%,0)}
+  60%{transform:translate3d(-3%,-3%,0)}
+  80%{transform:translate3d(5%,3%,0)}
+  100%{transform:translate3d(0,0,0)}
+}
+
+/* ---------- 4. TYPOGRAPHY HELPERS ---------- */
+.eyebrow{
+  display:flex;align-items:center;gap:.85rem;
+  font-family:var(--font-ui);
+  font-size:.7rem;font-weight:500;
+  letter-spacing:.34em;text-transform:uppercase;
+  color:var(--copper);
+}
+.eyebrow::before{
+  content:"";width:clamp(1.6rem,4vw,3.4rem);height:1px;
+  background:currentColor;opacity:.55;flex:none;
+}
+.eyebrow--dark{color:var(--copper-ink)}
+.eyebrow i{
+  display:inline-block;width:1.5rem;height:1px;
+  background:currentColor;opacity:.5;
+  vertical-align:middle;margin:0 .3rem;
+}
+.hero__eyebrow{gap:.5rem}
+.hero__eyebrow::before{display:none}
+
+.accent{color:var(--copper)}
+
+.line{display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.12em}
+.line>span{
+  display:block;
+  transform:translate3d(0,110%,0);
+  transition:transform 1.25s var(--ease);
+}
+[data-lines] .line:nth-child(1)>span{transition-delay:calc(var(--d,0s) + 0s)}
+[data-lines] .line:nth-child(2)>span{transition-delay:calc(var(--d,0s) + .11s)}
+[data-lines] .line:nth-child(3)>span{transition-delay:calc(var(--d,0s) + .22s)}
+[data-lines] .line:nth-child(4)>span{transition-delay:calc(var(--d,0s) + .33s)}
+[data-lines] .line:nth-child(5)>span{transition-delay:calc(var(--d,0s) + .44s)}
+[data-lines].is-in .line>span{transform:none}
+
+/* ---------- 5. REVEAL SYSTEM ---------- */
+[data-reveal]{
+  opacity:0;
+  transform:translate3d(0,26px,0);
+  transition:
+    opacity 1.05s var(--ease) var(--d,0s),
+    transform 1.05s var(--ease) var(--d,0s);
+  will-change:opacity,transform;
+}
+[data-reveal].is-in{opacity:1;transform:none}
+
+[data-reveal="clip"]{
+  opacity:1;transform:none;will-change:clip-path;
+  clip-path:inset(0 0 100% 0);
+  transition:clip-path 1.5s var(--ease) var(--d,0s);
+}
+[data-reveal="clip"].is-in{clip-path:inset(0 0 0 0)}
+
+[data-reveal="clip"] img{
+  transform:scale(1.16);
+  transition:transform 2.1s var(--ease) var(--d,0s);
+}
+[data-reveal="clip"].is-in img{transform:scale(1)}
+
+/* ---------- 6. BUTTONS ---------- */
+.btn{
+  position:relative;
+  display:inline-flex;align-items:center;justify-content:center;
+  gap:.75rem;
+  padding:1.05rem 2.15rem;
+  border:1px solid rgba(242,238,231,.32);
+  font-family:var(--font-ui);
+  font-size:.74rem;font-weight:500;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:var(--paper);
+  overflow:hidden;
+  isolation:isolate;
+  transition:
+    color .45s var(--ease),
+    border-color .45s var(--ease),
+    background-color .45s var(--ease);
+}
+.btn::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:var(--paper);
+  transform:translate3d(0,101%,0);
+  transition:transform .6s var(--ease);
+}
+.btn:hover::after,.btn:focus-visible::after{transform:none}
+.btn:hover,.btn:focus-visible{color:var(--ink);border-color:var(--paper)}
+
+.btn--solid{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.btn--solid::after{background:var(--copper)}
+.btn--solid:hover,.btn--solid:focus-visible{color:var(--ink);border-color:var(--copper)}
+
+.btn--ghost::after{background:rgba(242,238,231,.94)}
+
+.btn--dark{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn--dark::after{background:var(--copper)}
+.btn--dark:hover,.btn--dark:focus-visible{color:var(--ink);border-color:var(--copper)}
+
+/* ---------- 7. NAV ---------- */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  border-bottom:1px solid transparent;
+  transition:background .6s var(--ease),border-color .6s var(--ease),backdrop-filter .6s var(--ease);
+}
+.nav.is-scrolled{
+  background:rgba(9,13,18,.82);
+  backdrop-filter:blur(16px) saturate(140%);
+  -webkit-backdrop-filter:blur(16px) saturate(140%);
+  border-bottom-color:var(--line-soft);
+}
+.nav__inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:2rem;
+  padding:clamp(1rem,2.2vh,1.6rem) var(--pad);
+  transition:padding .6s var(--ease);
+}
+.nav.is-scrolled .nav__inner{padding-top:clamp(.75rem,1.6vh,1.05rem);padding-bottom:clamp(.75rem,1.6vh,1.05rem)}
+
+.nav__brand{display:flex;flex-direction:column;line-height:1.25}
+.nav__brand-name{
+  font-family:var(--font-display);
+  font-size:1.06rem;font-weight:400;
+  letter-spacing:.06em;color:var(--paper);
+}
+.nav__brand-sub{
+  font-size:.56rem;letter-spacing:.3em;text-transform:uppercase;
+  color:rgba(242,238,231,.45);
+  transition:opacity .5s var(--ease),max-height .5s var(--ease);
+  overflow:hidden;max-height:1.4rem;
+}
+.nav.is-scrolled .nav__brand-sub{opacity:0;max-height:0}
+
+.nav__links{display:flex;align-items:center;gap:clamp(1.4rem,2.6vw,2.6rem)}
+.nav__links a{
+  position:relative;
+  font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(242,238,231,.66);
+  padding:.35rem 0;
+  transition:color .4s var(--ease);
+}
+.nav__links a::after{
+  content:"";position:absolute;left:0;bottom:0;
+  width:100%;height:1px;background:currentColor;
+  transform:scaleX(0);transform-origin:right;
+  transition:transform .55s var(--ease);
+}
+.nav__links a:hover,.nav__links a:focus-visible{color:var(--paper)}
+.nav__links a:hover::after,.nav__links a:focus-visible::after{transform:scaleX(1);transform-origin:left}
+.nav__cta{color:var(--copper) !important}
+.nav__cta::after{background:var(--copper) !important}
+
+.nav__toggle{
+  display:none;
+  width:44px;height:44px;
+  align-items:center;justify-content:center;
+  flex-direction:column;gap:7px;
+  margin-right:-10px;
+}
+.nav__toggle span{
+  display:block;width:26px;height:1px;background:var(--paper);
+  transition:transform .5s var(--ease),opacity .35s var(--ease);
+}
+.nav__toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(4px) rotate(45deg)}
+.nav__toggle[aria-expanded="true"] span:nth-child(2){transform:translateY(-4px) rotate(-45deg)}
+
+/* ---------- 8. MOBILE MENU ---------- */
+.menu{
+  position:fixed;inset:0;z-index:45;
+  background:rgba(8,12,16,.97);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  display:flex;flex-direction:column;justify-content:center;
+  gap:3rem;
+  padding:7rem var(--pad) 3rem;
+  transform:translate3d(0,-100%,0);
+  transition:transform .85s var(--ease);
+  overflow-y:auto;
+}
+.menu.is-open{transform:none}
+.menu[hidden]{display:none}
+.menu__links{display:flex;flex-direction:column;gap:clamp(.6rem,2.4vh,1.3rem)}
+.menu__links a{
+  font-family:var(--font-display);
+  font-size:clamp(1.9rem,8vw,3rem);
+  font-weight:300;line-height:1.1;
+  color:var(--paper);
+  opacity:0;transform:translate3d(0,24px,0);
+  transition:opacity .7s var(--ease),transform .7s var(--ease);
+}
+.menu.is-open .menu__links a{
+  opacity:1;transform:none;
+  transition-delay:calc(.18s + var(--i) * .06s);
+}
+.menu__foot{
+  display:flex;flex-direction:column;gap:.5rem;
+  border-top:1px solid var(--line-soft);padding-top:1.6rem;
+  font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--text-soft);
+}
+.menu__foot a{color:var(--copper);text-transform:none;letter-spacing:.06em;font-size:.92rem}
+
+/* ---------- 9. HERO ---------- */
+.hero-wrap{position:relative;z-index:0;height:200vh;height:200svh}
+
+.hero{
+  position:sticky;top:0;
+  height:100vh;height:100svh;
+  overflow:hidden;
+  display:flex;align-items:center;
+  background:var(--ink);
+}
+
+.hero__media{position:absolute;inset:0;overflow:hidden;z-index:0}
+.hero__media img{
+  width:100%;height:100%;object-fit:cover;
+  object-position:58% 45%;
+  filter:contrast(1.05) saturate(.88) brightness(.97);
+  transform:translate3d(0,calc(var(--p,0) * -4vh),0) scale(calc(1 + var(--p,0) * .17));
+  will-change:transform;
+}
+
+.hero__veil{
+  position:absolute;inset:0;z-index:1;
+  background:
+    linear-gradient(105deg,rgba(8,12,16,.92) 0%,rgba(8,12,16,.62) 38%,rgba(8,12,16,.28) 68%,rgba(8,12,16,.55) 100%),
+    linear-gradient(to top,rgba(8,12,16,.85) 0%,rgba(8,12,16,0) 45%),
+    radial-gradient(120% 90% at 20% 30%,rgba(11,16,21,.35),rgba(11,16,21,.7));
+  opacity:calc(.72 + var(--p,0) * .28);
+}
+
+.hero__ambient{
+  position:absolute;inset:0;z-index:2;pointer-events:none;
+  opacity:calc(1 - var(--p,0) * 1.4);
+}
+.blob{
+  position:absolute;border-radius:50%;
+  width:46vw;height:46vw;min-width:340px;min-height:340px;
+  will-change:transform;
+}
+.blob--1{
+  left:-8vw;top:6vh;
+  background:radial-gradient(circle at 50% 50%,rgba(184,151,105,.24),rgba(184,151,105,0) 66%);
+  animation:drift1 34s ease-in-out infinite alternate;
+}
+.blob--2{
+  right:-6vw;bottom:-12vh;
+  background:radial-gradient(circle at 50% 50%,rgba(113,128,119,.28),rgba(113,128,119,0) 68%);
+  animation:drift2 41s ease-in-out infinite alternate;
+}
+.blob--3{
+  left:38%;top:34%;
+  width:32vw;height:32vw;min-width:240px;min-height:240px;
+  background:radial-gradient(circle at 50% 50%,rgba(201,185,163,.16),rgba(201,185,163,0) 70%);
+  animation:drift1 47s ease-in-out infinite alternate-reverse;
+}
+@keyframes drift1{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(6vw,5vh,0) scale(1.14)}}
+@keyframes drift2{from{transform:translate3d(0,0,0) scale(1.1)}to{transform:translate3d(-5vw,-6vh,0) scale(1)}}
+
+.spark{
+  position:absolute;left:var(--x);top:var(--y);
+  width:3px;height:3px;border-radius:50%;
+  background:rgba(242,238,231,.95);
+  box-shadow:0 0 10px rgba(226,214,196,.75);
+  opacity:0;will-change:transform,opacity;
+  animation:sparkRise var(--t) linear var(--d) infinite;
+}
+@keyframes sparkRise{
+  0%{opacity:0;transform:translate3d(0,26px,0)}
+  18%{opacity:.6}
+  70%{opacity:.32}
+  100%{opacity:0;transform:translate3d(-16px,-120px,0)}
+}
+
+.hero__inner{
+  position:absolute;left:0;right:0;top:50%;
+  z-index:3;
+  width:100%;max-width:var(--maxw);
+  margin:0 auto;
+  padding:0 var(--pad);
+  transform:translate3d(0,calc(-46% + var(--p,0) * -7vh),0);
+  opacity:calc(1 - var(--p,0) * 1.25);
+  will-change:transform,opacity;
+}
+
+.hero__title{
+  font-family:var(--font-display);
+  font-optical-sizing:auto;
+  font-variation-settings:"opsz" 144;
+  font-size:clamp(3.5rem,8.6vw,9rem);
+  line-height:.93;
+  letter-spacing:-.025em;
+  color:var(--paper);
+  margin:clamp(1.4rem,3.4vh,2.4rem) 0 clamp(1.6rem,3.6vh,2.6rem);
+  --d:.3s;
+  text-shadow:0 18px 60px rgba(4,7,10,.55);
+}
+.hero__title .line:nth-child(2){padding-left:.16em}
+
+.hero__lead{
+  font-size:clamp(1rem,1.35vw,1.24rem);
+  line-height:1.7;
+  color:rgba(242,238,231,.8);
+  max-width:44ch;
+  font-weight:300;
+}
+
+.hero__actions{
+  display:flex;flex-wrap:wrap;gap:clamp(.8rem,1.6vw,1.3rem);
+  margin-top:clamp(2rem,4.6vh,3.2rem);
+}
+
+.hero__place{
+  position:absolute;right:var(--pad);bottom:clamp(6.5rem,16vh,10rem);
+  z-index:3;
+  font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;
+  color:rgba(242,238,231,.55);
+  writing-mode:vertical-rl;
+  opacity:calc(1 - var(--p,0) * 1.7);
+}
+.hero__place span{color:var(--copper);margin:.7rem 0}
+
+.hero__scroll{
+  position:absolute;left:var(--pad);bottom:clamp(1.6rem,4vh,2.6rem);
+  z-index:3;
+  display:flex;align-items:center;gap:1rem;
+  font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;
+  color:rgba(242,238,231,.6);
+  opacity:calc(1 - var(--p,0) * 1.7);
+  transition:color .4s var(--ease);
+}
+.hero__scroll:hover{color:var(--paper)}
+.hero__scroll-line{
+  position:relative;display:block;
+  width:clamp(56px,7vw,96px);height:1px;
+  background:rgba(242,238,231,.3);overflow:hidden;
+}
+.hero__scroll-line i{
+  position:absolute;top:0;left:0;
+  width:34px;height:1px;background:var(--copper);
+  animation:scrollHint 2.8s var(--ease-soft) infinite;
+}
+@keyframes scrollHint{
+  0%{transform:translate3d(-40px,0,0)}
+  60%{transform:translate3d(100px,0,0)}
+  100%{transform:translate3d(100px,0,0)}
+}
+
+/* ---------- 10. SECTION SHELL ---------- */
+.after{
+  position:relative;z-index:2;
+  margin-top:-100vh;margin-top:-100svh;
+  background:transparent;
+}
+
+/* ---------- 11. INTRO ---------- */
+.intro{
+  padding:clamp(5.5rem,16vh,12rem) var(--pad) clamp(4.5rem,13vh,9rem);
+  background:
+    radial-gradient(90% 60% at 8% 0%,rgba(184,151,105,.07),transparent 60%),
+    linear-gradient(to bottom,
+      rgba(11,16,21,0) 0,
+      rgba(11,16,21,.55) 70px,
+      rgba(11,16,21,.94) 150px,
+      #0B1015 230px);
+}
+.intro__grid{
+  max-width:var(--maxw);margin:0 auto;
+  display:grid;
+  grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);
+  gap:clamp(2rem,6vw,7rem);
+  align-items:start;
+}
+
+.intro__figure{position:relative;margin:clamp(0rem,7vh,5rem) 0 0}
+.intro__figure .media-reveal__inner{overflow:hidden}
+.intro__figure img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.intro__caption{
+  margin-top:1.1rem;
+  font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;
+  color:rgba(242,238,231,.4);
+}
+
+.intro__body{padding-top:clamp(0rem,5vh,3rem)}
+
+.intro__statement{
+  font-family:var(--font-display);
+  font-variation-settings:"opsz" 120;
+  font-size:clamp(1.75rem,3.5vw,3.5rem);
+  line-height:1.14;
+  letter-spacing:-.015em;
+  color:var(--paper);
+  margin:clamp(1.6rem,4vh,2.6rem) 0 clamp(1.8rem,4.4vh,2.8rem);
+}
+.intro__statement .line:last-child span{color:var(--sand)}
+
+.intro__text{
+  display:grid;gap:1.4rem;
+  max-width:56ch;
+  color:var(--text-soft);
+}
+.intro__text p{font-size:clamp(.98rem,1.1vw,1.06rem)}
+
+.intro__facts{
+  margin-top:clamp(2.4rem,6vh,3.6rem);
+  border-top:1px solid var(--line-soft);
+  max-width:56ch;
+}
+.intro__facts li{
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:1.5rem;
+  padding:.95rem 0;
+  border-bottom:1px solid var(--line-soft);
+  font-size:.94rem;color:rgba(242,238,231,.8);
+}
+.intro__facts span{
+  font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--copper);flex:none;
+}
+
+/* ---------- 12. PATHS + PANELS ---------- */
+.paths{background:var(--ink)}
+
+.paths__head{
+  max-width:var(--maxw);margin:0 auto;
+  padding:clamp(3.5rem,10vh,7rem) var(--pad) clamp(2.5rem,7vh,4.5rem);
+  display:grid;gap:clamp(1.4rem,3vh,2.2rem);
+}
+.paths__title{
+  font-family:var(--font-display);
+  font-variation-settings:"opsz" 144;
+  font-size:clamp(2.6rem,6vw,6rem);
+  line-height:.98;letter-spacing:-.025em;
+  color:var(--paper);
+  --d:.05s;
+}
+.paths__title .line:nth-child(2){padding-left:.22em}
+.paths__lead{
+  color:var(--text-soft);
+  max-width:40ch;
+  font-size:clamp(1rem,1.2vw,1.14rem);
+}
+
+.panel{
+  position:relative;
+  min-height:92vh;min-height:92svh;
+  display:flex;
+  overflow:hidden;
+  isolation:isolate;
+  border-top:1px solid var(--line-soft);
+}
+.panel__media{position:absolute;inset:0;z-index:0;overflow:hidden}
+.panel__media img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform 2.4s var(--ease);
+}
+@media (hover:hover){
+  .panel.is-active:hover .panel__media img{transform:scale(1.055)}
+}
+
+.panel__veil{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to top,rgba(8,12,16,.94) 0%,rgba(8,12,16,.55) 45%,rgba(8,12,16,.3) 100%);
+}
+.panel__veil::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(120% 85% at 50% 105%,rgba(184,151,105,.26),transparent 62%);
+  opacity:0;transition:opacity 1.1s var(--ease);
+}
+@media (hover:hover){
+  .panel.is-active:hover .panel__veil::after{opacity:1}
+}
+
+.panel__inner{
+  position:relative;z-index:2;
+  width:100%;max-width:var(--maxw);margin:auto;
+  padding:clamp(4rem,12vh,9rem) var(--pad);
+  display:flex;align-items:flex-end;
+}
+.panel__body{
+  max-width:44rem;
+  transition:transform 1.1s var(--ease);
+}
+@media (hover:hover){
+  .panel.is-active:hover .panel__body{transform:translate3d(-6px,-6px,0)}
+}
+.panel__inner--right .panel__body{margin-left:auto}
+@media (hover:hover){
+  .panel.is-active:hover .panel__inner--right .panel__body{transform:translate3d(6px,-6px,0)}
+}
+
+.panel__index{
+  position:absolute;
+  top:clamp(2rem,7vh,4.5rem);right:var(--pad);
+  font-family:var(--font-display);
+  font-size:clamp(4rem,11vw,10rem);
+  line-height:.8;
+  color:transparent;
+  -webkit-text-stroke:1px rgba(242,238,231,.24);
+  opacity:.9;
+  z-index:2;
+}
+.panel--astro .panel__index{right:auto;left:var(--pad)}
+
+.panel__title{
+  font-family:var(--font-display);
+  font-variation-settings:"opsz" 144;
+  font-size:clamp(3.2rem,9vw,8.5rem);
+  line-height:.9;letter-spacing:-.03em;
+  color:var(--paper);
+  margin:.9rem 0 1.1rem;
+}
+.panel__title--long{font-size:clamp(2.6rem,6.4vw,6.2rem);line-height:.96}
+
+.panel__line{
+  font-family:var(--font-display);
+  font-size:clamp(1.2rem,2.1vw,1.9rem);
+  font-style:italic;
+  color:var(--sand);
+  line-height:1.35;
+  margin-bottom:1rem;
+}
+.panel__text{
+  color:rgba(242,238,231,.7);
+  max-width:42ch;
+  font-size:clamp(.96rem,1.1vw,1.05rem);
+}
+
+/* panel 02 — split composition + rings */
+.panel--bowl .panel__veil{
+  background:linear-gradient(100deg,rgba(8,12,16,.95) 0%,rgba(8,12,16,.78) 42%,rgba(8,12,16,.35) 100%);
+}
+.panel__rings{
+  position:absolute;z-index:1;
+  right:8%;top:50%;
+  width:min(52vw,640px);height:min(52vw,640px);
+  transform:translateY(-50%);
+  pointer-events:none;
+}
+.panel__rings circle{
+  fill:none;
+  stroke:rgba(242,238,231,.58);
+  stroke-width:1;
+  transform-box:fill-box;transform-origin:center;
+  transform:scale(.5);
+  opacity:0;
+  animation:ringSpread 11s cubic-bezier(.32,.08,.24,1) infinite;
+  animation-play-state:paused;
+}
+.panel.is-active .panel__rings circle{animation-play-state:running}
+.panel__rings circle:nth-child(1){animation-delay:0s}
+.panel__rings circle:nth-child(2){animation-delay:-2.75s}
+.panel__rings circle:nth-child(3){animation-delay:-5.5s}
+.panel__rings circle:nth-child(4){animation-delay:-8.25s}
+@keyframes ringSpread{
+  0%{transform:scale(.42);opacity:0}
+  14%{opacity:.7}
+  70%{opacity:.22}
+  100%{transform:scale(1.55);opacity:0}
+}
+
+/* panel 03 — orbit */
+.panel--astro .panel__media img{filter:saturate(.5) hue-rotate(-18deg) brightness(.92) contrast(1.05)}
+.panel--astro .panel__veil{
+  background:
+    linear-gradient(280deg,rgba(8,12,16,.94) 0%,rgba(8,12,16,.7) 46%,rgba(8,12,16,.3) 100%),
+    linear-gradient(to top,rgba(8,12,16,.8),transparent 55%);
+}
+.panel__orbit{
+  position:absolute;z-index:1;
+  left:6%;top:52%;
+  width:min(58vw,700px);height:min(58vw,700px);
+  transform:translateY(-50%);
+  transform-origin:center;
+  animation:slowSpin 160s linear infinite;
+  animation-play-state:paused;
+  pointer-events:none;
+}
+.panel.is-active .panel__orbit{animation-play-state:running}
+@keyframes slowSpin{to{transform:translateY(-50%) rotate(360deg)}}
+.panel__orbit ellipse{fill:none;stroke:rgba(201,185,163,.34);stroke-width:.8}
+.panel__orbit-core{fill:rgba(184,151,105,.85)}
+.panel__orbit-planet{fill:rgba(242,238,231,.8)}
+
+/* ---------- 13. RESONANCE (interactive bowl) ---------- */
+.resonance{
+  position:relative;
+  height:250vh;height:250svh;
+  background:
+    radial-gradient(70% 50% at 50% 45%,rgba(184,151,105,.09),transparent 70%),
+    linear-gradient(to bottom,#080C10,#0B1015 30%,#0B1015 70%,#080C10);
+}
+.resonance__sticky{
+  position:sticky;top:0;
+  height:100vh;height:100svh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:clamp(1.4rem,3.6vh,2.8rem);
+  padding:clamp(4.5rem,10vh,7rem) var(--pad);
+  overflow:hidden;
+}
+.resonance__glow{
+  position:absolute;left:0;top:0;
+  width:70vmax;height:70vmax;
+  max-width:none;
+  transform:translate3d(calc(var(--gx,50vw) - 50%),calc(var(--gy,50vh) - 50%),0);
+  background:radial-gradient(circle,rgba(184,151,105,.15),rgba(184,151,105,0) 60%);
+  pointer-events:none;
+  will-change:transform;
+}
+.resonance__eyebrow{position:absolute;top:clamp(3.5rem,9vh,5.5rem);left:var(--pad)}
+
+.resonance__stage{
+  position:relative;
+  width:clamp(250px,32vw,430px);
+  aspect-ratio:420/300;
+  display:grid;place-items:center;
+}
+.resonance__bowl{
+  position:relative;z-index:2;
+  width:100%;height:auto;
+  animation:bowlBreathe 8s ease-in-out infinite;
+}
+@keyframes bowlBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.014)}}
+
+.wave{
+  position:absolute;left:50%;top:52%;
+  width:96%;aspect-ratio:1;
+  margin:0;
+  border:1px solid rgba(184,151,105,.55);
+  border-radius:50%;
+  opacity:0;
+  transform:translate3d(-50%,-50%,0) scale(.35);
+  pointer-events:none;
+  will-change:transform,opacity;
+}
+.wave:nth-child(2){border-color:rgba(242,238,231,.32)}
+.wave:nth-child(4){border-color:rgba(201,185,163,.4)}
+.wave:nth-child(6){border-color:rgba(113,128,119,.5)}
+
+.resonance__text{
+  position:relative;z-index:3;
+  font-family:var(--font-display);
+  font-variation-settings:"opsz" 144;
+  font-size:clamp(1.75rem,4vw,3.6rem);
+  line-height:1.16;letter-spacing:-.02em;
+  text-align:center;
+  color:var(--paper);
+  max-width:20ch;
+  --d:.1s;
+}
+.resonance__note{
+  position:absolute;bottom:clamp(2rem,6vh,3.5rem);left:50%;
+  transform:translateX(-50%);
+  font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;
+  color:rgba(242,238,231,.4);
+  white-space:nowrap;
+}
+
+/* ---------- 14. STORY / TIMELINE ---------- */
+.story{
+  position:relative;
+  padding:clamp(5.5rem,16vh,12rem) var(--pad) clamp(5rem,14vh,10rem);
+  overflow:hidden;
+  background:var(--ink);
+}
+.story__bg{
+  position:absolute;inset:0;
+  opacity:.13;
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 25%,#000 70%,transparent);
+  mask-image:linear-gradient(to bottom,transparent,#000 25%,#000 70%,transparent);
+}
+.story__bg img{
+  width:100%;height:100%;object-fit:cover;
+  transform:translate3d(0,calc(var(--sp,0) * -6%),0) scale(1.12);
+  filter:grayscale(.35) contrast(1.05);
+}
+.story__inner{position:relative;max-width:var(--maxw);margin:0 auto}
+
+.story__head{max-width:44rem}
+.story__title{
+  font-family:var(--font-display);
+  font-variation-settings:"opsz" 144;
+  font-size:clamp(2.4rem,5.4vw,5.4rem);
+  line-height:1;letter-spacing:-.025em;
+  color:var(--paper);
+  margin-top:clamp(1.4rem,3.4vh,2.2rem);
+  --d:.05s;
+}
+.story__title .line:nth-child(2){padding-left:.18em}
+
+.timeline{
+  --tl-pad:clamp(2.6rem,6vw,6rem);
+  position:relative;
+  margin-top:clamp(3rem,9vh,6rem);
+  padding-left:var(--tl-pad);
+}
+.timeline__track,
+.timeline__progress{
+  position:absolute;left:0;top:0;
+  width:1px;height:100%;
+}
+.timeline__track{background:rgba(242,238,231,.12)}
+.timeline__progress{
+  background:linear-gradient(to bottom,var(--copper),rgba(184,151,105,.15));
+  transform:scaleY(0);transform-origin:top center;
+  will-change:transform;
+}
+
+.timeline__list{
+  display:grid;
+  gap:clamp(2.6rem,7vh,5rem);
+}
+.timeline__item{position:relative;max-width:54ch}
+.timeline__item:nth-child(2){margin-left:clamp(0px,3vw,3.4rem)}
+.timeline__item:nth-child(4){margin-left:clamp(0px,5vw,5.6rem)}
+.timeline__item:nth-child(6){margin-left:clamp(0px,2vw,2.2rem)}
+.timeline__item:nth-child(2){--d:.06s}
+.timeline__item:nth-child(3){--d:.12s}
+.timeline__item:nth-child(4){--d:.18s}
+.timeline__item:nth-child(5){--d:.24s}
+.timeline__item:nth-child(6){--d:.3s}
+
+.timeline__dot{
+  position:absolute;top:.55rem;
+  left:calc(-1 * var(--tl-pad) - 4.5px);
+  width:10px;height:10px;border-radius:50%;
+  background:var(--ink);
+  border:1px solid var(--copper);
+  transition:background .6s var(--ease),box-shadow .6s var(--ease);
+}
+.timeline__item.is-in .timeline__dot{
+  background:var(--copper);
+  box-shadow:0 0 0 5px rgba(184,151,105,.14);
+}
+.timeline__num{
+  font-size:.66rem;letter-spacing:.3em;
+  color:var(--copper);
+  margin-bottom:.7rem;
+}
+.timeline__item h3{
+  font-family:var(--font-display);
+  font-variation-settings:"opsz" 90;
+  font-size:clamp(1.4rem,2.6vw,2.2rem);
+  font-weight:400;line-height:1.2;
+  color:var(--paper);
+  margin-bottom:.6rem;
+  letter-spacing:-.01em;
+}
+.timeline__item p:last-child{color:var(--text-soft);font-size:clamp(.95rem,1.1vw,1.04rem)}
+
+/* ---------- 15. SHIFT / NÉZŐPONTVÁLTÁS ---------- */
+.shift{
+  position:relative;
+  min-height:100vh;min-height:100svh;
+  display:flex;align-items:center;
+  overflow:hidden;
+  padding:clamp(6rem,16vh,11rem) var(--pad);
+  background:#070A0E;
+}
+.shift__media{position:absolute;inset:-10%;z-index:0}
+.shift__media img{
+  width:100%;height:100%;object-fit:cover;
+  filter:saturate(.72) contrast(1.02);
+  transform:scale(1.14) translate3d(calc(var(--sp,0) * -2.5%),0,0) rotate(calc(var(--sp,0) * 4deg));
+  will-change:transform;
+}
+.shift__veil{
+  position:absolute;inset:0;z-index:1;
+  background:
+    linear-gradient(to right,rgba(7,10,14,.9) 0%,rgba(7,10,14,.6) 55%,rgba(7,10,14,.75) 100%),
+    linear-gradient(to top,rgba(7,10,14,.9),rgba(7,10,14,.25) 60%);
+}
+.shift__arc{
+  position:absolute;z-index:2;
+  right:-14vw;top:50%;
+  width:min(72vw,760px);height:min(72vw,760px);
+  transform:translateY(-50%) rotate(calc(var(--sp,0) * 70deg));
+  transform-origin:center;
+  pointer-events:none;
+}
+.shift__arc circle{fill:none;stroke:rgba(242,238,231,.16);stroke-width:1}
+.shift__arc path{fill:rgba(184,151,105,.5)}
+
+.shift__inner{
+  position:relative;z-index:3;
+  width:100%;max-width:var(--maxw);margin:0 auto;
+}
+.shift__title{
+  font-family:var(--font-display);
+  font-variation-settings:"opsz" 144;
+  font-size:clamp(2.3rem,5.6vw,5.6rem);
+  line-height:1.06;letter-spacing:-.025em;
+  color:var(--paper);
+  margin:clamp(1.5rem,4vh,2.6rem) 0 0;
+  max-width:17ch;
+  text-shadow:0 14px 50px rgba(4,7,10,.5);
+  --d:.05s;
+}
+.shift__title .line:nth-child(3){color:var(--sand)}
+.shift__note{
+  margin-top:clamp(2rem,5vh,3.4rem);
+  margin-left:auto;
+  max-width:34ch;
+  color:rgba(242,238,231,.68);
+  border-top:1px solid var(--line);
+  padding-top:1.2rem;
+  font-size:clamp(.95rem,1.1vw,1.05rem);
+}
+
+/* ---------- 16. ASTRO ---------- */
+.astro{
+  position:relative;
+  min-height:100vh;min-height:100svh;
+  display:flex;align-items:center;
+  padding:clamp(6rem,16vh,11rem) var(--pad);
+  background:
+    radial-gradient(80% 60% at 78% 50%,rgba(184,151,105,.09),transparent 65%),
+    #090D12;
+  overflow:hidden;
+}
+.astro__viz{
+  position:absolute;right:-12vw;top:50%;
+  width:min(78vw,880px);aspect-ratio:1;
+  transform:translateY(-50%);
+  opacity:.85;
+  pointer-events:none;
+}
+.astro__viz svg{width:100%;height:100%;display:block;overflow:visible}
+.astro__viz g{will-change:transform}
+
+.astro__grid line{stroke:rgba(242,238,231,.05);stroke-width:1}
+.astro__orbits ellipse{
+  fill:none;stroke:rgba(184,151,105,.3);stroke-width:1;
+  transform-box:fill-box;transform-origin:center;
+}
+.astro__orbits ellipse:nth-child(1){animation:orbitTurn 90s linear infinite}
+.astro__orbits ellipse:nth-child(3){animation:orbitTurn 130s linear infinite reverse}
+@keyframes orbitTurn{to{transform:rotate(360deg)}}
+.astro__chart path{fill:none;stroke:rgba(201,185,163,.55);stroke-width:1.1}
+.astro__chart circle{fill:rgba(242,238,231,.9)}
+.astro__stars circle{
+  fill:rgba(242,238,231,.85);
+  animation:twinkle 7s ease-in-out infinite;
+}
+.astro__stars circle:nth-child(2n){animation-delay:-2.2s;fill:rgba(184,151,105,.9)}
+.astro__stars circle:nth-child(3n){animation-delay:-4.4s}
+.astro__stars circle:nth-child(5n){animation-delay:-5.8s;fill:rgba(201,185,163,.9)}
+@keyframes twinkle{0%,100%{opacity:.25}50%{opacity:1}}
+.astro__ring circle{fill:none;stroke:rgba(242,238,231,.2);stroke-width:1}
+
+.astro__content{
+  position:relative;z-index:2;
+  max-width:min(46rem,52vw);
+}
+.astro__title{
+  font-family:var(--font-display);
+  font-variation-settings:"opsz" 144;
+  font-size:clamp(2.5rem,5.4vw,5.4rem);
+  line-height:1.02;letter-spacing:-.025em;
+  color:var(--paper);
+  margin:clamp(1.5rem,3.6vh,2.4rem) 0 clamp(1.6rem,4vh,2.4rem);
+  --d:.05s;
+}
+.astro__text{
+  color:var(--text-soft);
+  max-width:48ch;
+  margin-bottom:clamp(2rem,5vh,3rem);
+  font-size:clamp(.97rem,1.1vw,1.06rem);
+}
+
+/* ---------- 17. CTA ---------- */
+.cta{
+  background:
+    radial-gradient(70% 60% at 85% 20%,rgba(184,151,105,.14),transparent 60%),
+    var(--paper);
+  color:rgba(11,16,21,.78);
+  padding:clamp(5.5rem,16vh,11rem) var(--pad);
+}
+.cta__inner{
+  max-width:var(--maxw);margin:0 auto;
+  display:grid;
+  grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);
+  gap:clamp(2.5rem,6vw,6.5rem);
+  align-items:center;
+}
+.cta__title{
+  font-family:var(--font-display);
+  font-variation-settings:"opsz" 144;
+  font-size:clamp(2.5rem,5.6vw,5.6rem);
+  line-height:1.02;letter-spacing:-.03em;
+  color:#0B1015;
+  margin:clamp(1.4rem,3.4vh,2.2rem) 0 clamp(1.5rem,3.6vh,2.2rem);
+  --d:.05s;
+}
+.cta__title .line:nth-child(2){color:var(--copper-ink)}
+.cta__lead{
+  max-width:44ch;
+  color:rgba(11,16,21,.7);
+  font-size:clamp(1rem,1.2vw,1.1rem);
+}
+.cta__actions{margin-top:clamp(2rem,5vh,3rem)}
+.cta__services{
+  margin-top:clamp(2.2rem,5vh,3.2rem);
+  padding-top:1.4rem;
+  border-top:1px solid rgba(11,16,21,.14);
+  font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;
+  color:rgba(11,16,21,.62);
+  display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;
+}
+.cta__services i{
+  display:inline-block;width:1.4rem;height:1px;
+  background:rgba(11,16,21,.35);
+  margin:0 .4rem;
+}
+.cta__mail{margin-top:1rem;font-size:1rem}
+.cta__mail a{
+  color:var(--copper-ink);
+  border-bottom:1px solid rgba(138,108,67,.4);
+  padding-bottom:2px;
+  transition:border-color .4s var(--ease),color .4s var(--ease);
+}
+.cta__mail a:hover{color:#0B1015;border-color:#0B1015}
+
+.cta__figure{position:relative}
+.cta__figure .media-reveal__inner{overflow:hidden}
+.cta__figure img{
+  width:100%;aspect-ratio:4/5;object-fit:cover;
+  filter:saturate(.62) contrast(1.05) sepia(.12) brightness(1.02);
+}
+
+/* ---------- 18. FOOTER ---------- */
+.footer{
+  background:var(--ink-deep);
+  border-top:1px solid var(--line-soft);
+  padding:clamp(3.5rem,9vh,6rem) var(--pad) clamp(2rem,5vh,3rem);
+}
+.footer__inner{
+  max-width:var(--maxw);margin:0 auto;
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr auto;
+  gap:clamp(2rem,4vw,3.5rem);
+  align-items:start;
+}
+.footer__name{
+  font-family:var(--font-display);
+  font-size:clamp(1.5rem,2.6vw,2.2rem);
+  color:var(--paper);
+  letter-spacing:-.01em;
+}
+.footer__tag{
+  margin-top:.6rem;
+  font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;
+  color:rgba(242,238,231,.45);
+}
+.footer__label{
+  font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--copper);
+  margin-bottom:.8rem;
+}
+.footer__col{font-size:.95rem;color:rgba(242,238,231,.8);line-height:1.7}
+.footer__col .muted{color:rgba(242,238,231,.45);font-size:.86rem}
+.footer__col a{border-bottom:1px solid rgba(242,238,231,.2);transition:border-color .4s var(--ease),color .4s var(--ease)}
+.footer__col a:hover{color:var(--copper);border-color:var(--copper)}
+.footer__col--end{justify-self:end;text-align:right}
+
+.footer__top{
+  display:inline-flex;align-items:center;gap:.7rem;
+  font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;
+  color:rgba(242,238,231,.6);
+  transition:color .4s var(--ease);
+}
+.footer__top::before{
+  content:"";width:2.2rem;height:1px;background:currentColor;
+  transition:width .5s var(--ease);
+}
+.footer__top:hover{color:var(--copper)}
+.footer__top:hover::before{width:3.4rem}
+
+.footer__legal{
+  max-width:var(--maxw);margin:clamp(2.5rem,6vh,4rem) auto 0;
+  padding-top:1.5rem;
+  border-top:1px solid var(--line-soft);
+  font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(242,238,231,.32);
+}
+
+/* ---------- 19. RESPONSIVE ---------- */
+@media (max-width:1180px){
+  .astro__content{max-width:min(46rem,60vw)}
+  .astro__viz{right:-22vw;opacity:.7}
+  .footer__inner{grid-template-columns:1.3fr 1fr 1fr}
+  .footer__col--end{grid-column:1 / -1;justify-self:start;text-align:left;margin-top:.5rem}
+}
+
+@media (max-width:980px){
+  .nav__links{display:none}
+  .nav__toggle{display:flex}
+
+  .intro__grid{grid-template-columns:1fr;gap:clamp(2.2rem,6vh,3.5rem)}
+  .intro__figure{margin-top:0;max-width:none}
+  .intro__figure img{aspect-ratio:3/4}
+  .intro__body{padding-top:0}
+  .intro__statement{font-size:clamp(1.65rem,5.6vw,2.6rem)}
+
+  .panel{min-height:86svh}
+  .panel__inner{align-items:flex-end}
+  .panel__inner--right{justify-content:flex-start}
+  .panel__inner--right .panel__body{margin-left:0}
+  .panel__rings{right:-16%;width:min(78vw,540px);height:min(78vw,540px);opacity:.65}
+  .panel__orbit{left:-18%;top:34%;width:min(88vw,560px);height:min(88vw,560px);opacity:.6}
+
+  .cta__inner{grid-template-columns:1fr;gap:clamp(2.5rem,6vh,4rem)}
+  .cta__figure{order:-1;max-width:32rem}
+  .cta__figure img{aspect-ratio:3/4}
+
+  .astro{align-items:flex-start}
+  .astro__content{max-width:none}
+  .astro__viz{
+    right:-30vw;top:auto;bottom:-8vh;transform:none;
+    width:min(120vw,720px);opacity:.42;
+  }
+}
+
+@media (max-width:760px){
+  :root{--pad:clamp(1.15rem,6vw,2rem)}
+
+  .hero__inner{transform:translate3d(0,calc(-42% + var(--p,0) * -5vh),0)}
+  .hero__title{font-size:clamp(3.1rem,15vw,5rem);margin-top:1.1rem}
+  .hero__title .line:nth-child(2){padding-left:.1em}
+  .hero__place{display:none}
+  .br-desk{display:none}
+  .hero__actions{gap:.7rem}
+  .hero__actions .btn{flex:1 1 auto;min-width:min(100%,15rem);padding:1rem 1.4rem}
+  .blob--3{display:none}
+  .spark{width:2px;height:2px}
+  .spark:nth-child(n+6){display:none}
+
+  .paths__title .line:nth-child(2){padding-left:.12em}
+  .story__title .line:nth-child(2){padding-left:.1em}
+
+  .panel{min-height:82svh}
+  .panel__index{
+    top:clamp(1.4rem,4vh,2.4rem);
+    font-size:clamp(3rem,17vw,5rem);
+    opacity:.75;
+  }
+  .panel__title{font-size:clamp(2.8rem,15vw,4.6rem)}
+  .panel__title--long{font-size:clamp(2.3rem,11vw,3.6rem)}
+  .panel__text{max-width:100%}
+  .panel--bowl .panel__veil{background:linear-gradient(to top,rgba(8,12,16,.96) 10%,rgba(8,12,16,.6) 60%,rgba(8,12,16,.4))}
+  .panel--astro .panel__veil{background:linear-gradient(to top,rgba(8,12,16,.96) 10%,rgba(8,12,16,.62) 60%,rgba(8,12,16,.4))}
+  .panel__rings{top:34%;right:50%;transform:translate(50%,-50%);width:min(96vw,460px);height:min(96vw,460px);opacity:.5}
+  .panel__orbit{top:30%;left:50%;transform:translate(-50%,-50%);width:min(96vw,460px);height:min(96vw,460px);opacity:.45}
+  @keyframes slowSpin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+
+  .resonance{height:210svh}
+  .resonance__stage{width:min(74vw,340px)}
+  .resonance__glow{display:none}
+  .resonance__text{font-size:clamp(1.55rem,7vw,2.3rem);max-width:16ch}
+  .resonance__note{font-size:.56rem;letter-spacing:.24em}
+  .resonance__eyebrow{top:clamp(5.5rem,12vh,7rem)}
+
+  .timeline{--tl-pad:1.6rem}
+  .timeline__item{margin-left:0 !important;max-width:100%}
+  .timeline__dot{left:calc(-1 * var(--tl-pad) - 4.5px)}
+
+  .shift{padding-top:clamp(7rem,20vh,10rem);padding-bottom:clamp(6rem,16vh,8rem)}
+  .shift__title{font-size:clamp(2.05rem,9vw,3.2rem);max-width:100%}
+  .shift__note{margin-left:0;max-width:100%}
+  .shift__arc{right:-40vw;top:30%;width:min(120vw,520px);height:min(120vw,520px);opacity:.7}
+
+  .astro{padding-top:clamp(6rem,16vh,9rem)}
+  .astro__title{font-size:clamp(2.2rem,9.5vw,3.4rem)}
+  .astro__text{max-width:100%}
+  .astro__viz{bottom:-4vh;right:-40vw;opacity:.34}
+
+  .cta__title{font-size:clamp(2.2rem,9.5vw,3.4rem)}
+  .cta__figure{max-width:none}
+
+  .footer__inner{grid-template-columns:1fr;gap:2rem}
+  .footer__col--end{margin-top:.3rem}
+}
+
+@media (max-width:400px){
+  .hero__title{font-size:clamp(2.7rem,14vw,3.4rem)}
+  .btn{padding:.95rem 1.5rem;font-size:.7rem;letter-spacing:.16em}
+  .eyebrow{font-size:.62rem;letter-spacing:.26em}
+  .hero__actions{flex-direction:column;align-items:stretch}
+}
+
+@media (min-width:1600px){
+  .hero__inner{padding-left:clamp(1.25rem,4vw,5.5rem)}
+}
+
+/* short viewports (landscape phones) */
+@media (max-height:560px) and (min-width:600px){
+  .hero__title{font-size:clamp(2.6rem,7vw,4rem);margin:.9rem 0 1.1rem}
+  .hero__lead{font-size:.98rem}
+  .resonance__stage{width:min(38vh,280px)}
+  .resonance__text{font-size:clamp(1.4rem,4vh,2rem)}
+}
+
+/* ---------- 20. REDUCED MOTION ---------- */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+    transition-delay:0s !important;
+  }
+  [data-reveal]{opacity:1 !important;transform:none !important;clip-path:none !important}
+  .line>span{transform:none !important}
+  .hero__media img,
+  .shift__media img,
+  .story__bg img{transform:none !important}
+  .timeline__progress{transform:scaleY(1) !important}
+  .grain{animation:none !important}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rappi Gabriella",
+  "jobTitle": "Jógaoktató",
+  "email": "mailto:rgabca@gmail.com",
+  "knowsAbout": ["Jóga", "Hangtálterápia", "Asztrozófiai elemzés"],
+  "affiliation": { "@type": "Organization", "name": "Himalájai Jóga Tradíció" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Halásztelek",
+    "addressCountry": "HU"
+  }
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#tartalom">Ugrás a tartalomra</a>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" data-nav>
+  <div class="nav__inner">
+    <a class="nav__brand" href="#hero" aria-label="Rappi Gabriella — vissza az elejére">
+      <span class="nav__brand-name">Rappi Gabriella</span>
+      <span class="nav__brand-sub">Jóga · Hangtál · Asztrozófia</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Fő navigáció">
+      <a href="#bemutatkozas">Bemutatkozás</a>
+      <a href="#utak">Három út</a>
+      <a href="#asztrozofia">Asztrozófia</a>
+      <a class="nav__cta" href="#kapcsolat">Kapcsolat</a>
+    </nav>
+
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menü megnyitása" data-menu-toggle>
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="mobile-menu" data-menu hidden>
+  <nav class="menu__links" aria-label="Mobil navigáció">
+    <a href="#bemutatkozas" style="--i:1">Bemutatkozás</a>
+    <a href="#utak" style="--i:2">Három út</a>
+    <a href="#hangtal" style="--i:3">Hangtál</a>
+    <a href="#tortenet" style="--i:4">A jóga útja</a>
+    <a href="#asztrozofia" style="--i:5">Asztrozófia</a>
+    <a href="#kapcsolat" style="--i:6">Kapcsolat</a>
+  </nav>
+  <div class="menu__foot">
+    <span>Halásztelek</span>
+    <a href="mailto:rgabca@gmail.com">rgabca@gmail.com</a>
+  </div>
+</div>
+
+<main id="tartalom">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero-wrap">
+    <section class="hero" id="hero" aria-labelledby="hero-cim" data-hero>
+      <div class="hero__media">
+        <img
+          src="https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&amp;fit=crop&amp;w=1800&amp;q=72"
+          srcset="https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&amp;fit=crop&amp;w=900&amp;q=70 900w,
+                  https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&amp;fit=crop&amp;w=1500&amp;q=72 1500w,
+                  https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&amp;fit=crop&amp;w=2400&amp;q=72 2400w"
+          sizes="100vw"
+          width="2400" height="1600" fetchpriority="high" decoding="async"
+          alt="Jógázó alak a ködbe burkolózott hegygerincen, hajnali fényben">
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__ambient" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+        <span class="blob blob--3"></span>
+        <span class="spark" style="--x:12%;--y:64%;--d:0s;--t:26s"></span>
+        <span class="spark" style="--x:24%;--y:38%;--d:-4s;--t:32s"></span>
+        <span class="spark" style="--x:38%;--y:72%;--d:-9s;--t:29s"></span>
+        <span class="spark" style="--x:52%;--y:30%;--d:-2s;--t:35s"></span>
+        <span class="spark" style="--x:63%;--y:58%;--d:-13s;--t:30s"></span>
+        <span class="spark" style="--x:74%;--y:24%;--d:-7s;--t:33s"></span>
+        <span class="spark" style="--x:83%;--y:66%;--d:-16s;--t:28s"></span>
+        <span class="spark" style="--x:90%;--y:42%;--d:-11s;--t:36s"></span>
+      </div>
+
+      <div class="hero__inner">
+        <p class="eyebrow hero__eyebrow" data-reveal style="--d:.15s">Jóga <i></i> Hangtál <i></i> Asztrozófia</p>
+
+        <h1 class="hero__title" id="hero-cim" data-lines>
+          <span class="line"><span>Vissza</span></span>
+          <span class="line"><span>a csendhez.</span></span>
+        </h1>
+
+        <p class="hero__lead" data-reveal style="--d:.85s">
+          Egy tér, ahol egy időre elcsendesedik a külvilág,<br class="br-desk">
+          és újra figyelmet kaphat az, ami belül történik.
+        </p>
+
+        <div class="hero__actions" data-reveal style="--d:1.05s">
+          <a class="btn btn--solid" href="#utak" data-magnetic>Fedezd fel</a>
+          <a class="btn btn--ghost" href="#kapcsolat" data-magnetic>Kapcsolat</a>
+        </div>
+      </div>
+
+      <p class="hero__place">Halásztelek <span>·</span> Budapest környéke</p>
+
+      <a class="hero__scroll" href="#bemutatkozas" aria-label="Görgess tovább a következő szakaszhoz">
+        <span class="hero__scroll-label">Görgess</span>
+        <span class="hero__scroll-line" aria-hidden="true"><i></i></span>
+      </a>
+    </section>
+  </div>
+
+  <div class="after">
+
+    <!-- ============ 2. BEMUTATKOZÁS ============ -->
+    <section class="intro" id="bemutatkozas" aria-labelledby="intro-cim">
+      <div class="intro__grid">
+
+        <figure class="intro__figure media-reveal" data-reveal="clip">
+          <div class="media-reveal__inner" data-parallax="0.08">
+            <img
+              src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?auto=format&amp;fit=crop&amp;w=1200&amp;q=75"
+              srcset="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?auto=format&amp;fit=crop&amp;w=700&amp;q=72 700w,
+                      https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?auto=format&amp;fit=crop&amp;w=1200&amp;q=75 1200w"
+              sizes="(max-width: 860px) 100vw, 42vw"
+              width="1200" height="1500" loading="lazy" decoding="async"
+              alt="Jóga gyakorlás meleg, fából készült teremben, természetes fényben">
+          </div>
+          <figcaption class="intro__caption">Csend · légzés · figyelem</figcaption>
+        </figure>
+
+        <div class="intro__body">
+          <p class="eyebrow" data-reveal>Bemutatkozás</p>
+
+          <p class="intro__statement" data-lines>
+            <span class="line"><span>A jóga számomra nem</span></span>
+            <span class="line"><span>valamivé válás, hanem</span></span>
+            <span class="line"><span>visszatérés ahhoz, ami</span></span>
+            <span class="line"><span>már eleve bennünk van.</span></span>
+          </p>
+
+          <div class="intro__text" data-reveal style="--d:.2s">
+            <p>
+              Rappi Gabriella a jógával Budapesten találkozott mélyebben — nem
+              gyakorlatként, hanem gondolkodásként. A keleti filozófia és a jóga
+              hosszú éveken át formálta a nézőpontját.
+            </p>
+            <p>
+              Az első lépéseket Mezősi Anna vezetésével tette, később az
+              oktatóképzésen nemzetközi tanároktól is tanult, majd Papp József és
+              Kádár Zoltán képzésein vett részt. Jógaoktatóként a Himalájai Jóga
+              Tradíció szellemiségében tanít.
+            </p>
+          </div>
+
+          <ul class="intro__facts" data-reveal style="--d:.35s">
+            <li><span>Hagyomány</span>Himalájai Jóga Tradíció</li>
+            <li><span>Helyszín</span>Halásztelek · Budapest környéke</li>
+            <li><span>Szemlélet</span>belső utazás, csend, nézőpontváltás</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. HÁROM ÚT ============ -->
+    <section class="paths" id="utak" aria-labelledby="paths-cim">
+      <header class="paths__head">
+        <p class="eyebrow" data-reveal>A három út</p>
+        <h2 class="paths__title" id="paths-cim" data-lines>
+          <span class="line"><span>Három irány,</span></span>
+          <span class="line"><span>egyfelé tartva.</span></span>
+        </h2>
+        <p class="paths__lead" data-reveal style="--d:.2s">
+          Minden út ugyanoda vezet: a saját ritmusodhoz, a saját csendedhez.
+        </p>
+      </header>
+
+      <!-- 01 JÓGA -->
+      <article class="panel panel--yoga" data-panel>
+        <div class="panel__media" data-reveal="clip">
+          <img
+            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&amp;fit=crop&amp;w=1800&amp;q=75"
+            srcset="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&amp;fit=crop&amp;w=900&amp;q=72 900w,
+                    https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&amp;fit=crop&amp;w=1800&amp;q=75 1800w,
+                    https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&amp;fit=crop&amp;w=2400&amp;q=75 2400w"
+            sizes="100vw" width="2400" height="1600" loading="lazy" decoding="async"
+            alt="Jógázó sziluettje nyugodt testtartásban a lemenő nap fényében">
+        </div>
+        <div class="panel__veil" aria-hidden="true"></div>
+
+        <div class="panel__inner">
+          <span class="panel__index" aria-hidden="true">01</span>
+          <div class="panel__body">
+            <p class="eyebrow" data-reveal>Út</p>
+            <h3 class="panel__title" data-lines><span class="line"><span>Jóga</span></span></h3>
+            <p class="panel__line" data-reveal style="--d:.15s">Mozgás, légzés és figyelem.</p>
+            <p class="panel__text" data-reveal style="--d:.25s">
+              A test itt nem cél, hanem kapu: a figyelem lassan visszatalálja a
+              helyét, a légzés pedig rendet tesz a nap közepén.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 HANGTÁL -->
+      <article class="panel panel--bowl" data-panel>
+        <div class="panel__media" data-reveal="clip">
+          <img
+            src="https://images.unsplash.com/photo-1621789939908-fdce2616aabf?auto=format&amp;fit=crop&amp;w=1800&amp;q=75"
+            srcset="https://images.unsplash.com/photo-1621789939908-fdce2616aabf?auto=format&amp;fit=crop&amp;w=900&amp;q=72 900w,
+                    https://images.unsplash.com/photo-1621789939908-fdce2616aabf?auto=format&amp;fit=crop&amp;w=1800&amp;q=75 1800w,
+                    https://images.unsplash.com/photo-1621789939908-fdce2616aabf?auto=format&amp;fit=crop&amp;w=2400&amp;q=75 2400w"
+            sizes="100vw" width="2400" height="1600" loading="lazy" decoding="async"
+            alt="Réztónusú hangtálak egy letisztult asztalon, meleg fényben">
+        </div>
+        <div class="panel__veil" aria-hidden="true"></div>
+
+        <svg class="panel__rings" viewBox="0 0 600 600" aria-hidden="true" focusable="false">
+          <circle cx="300" cy="300" r="90"></circle>
+          <circle cx="300" cy="300" r="150"></circle>
+          <circle cx="300" cy="300" r="215"></circle>
+          <circle cx="300" cy="300" r="285"></circle>
+        </svg>
+
+        <div class="panel__inner panel__inner--split">
+          <span class="panel__index" aria-hidden="true">02</span>
+          <div class="panel__body">
+            <p class="eyebrow" data-reveal>Út</p>
+            <h3 class="panel__title" data-lines><span class="line"><span>Hangtál</span></span></h3>
+            <p class="panel__line" data-reveal style="--d:.15s">A csend és a rezgés találkozása.</p>
+            <p class="panel__text" data-reveal style="--d:.25s">
+              A hangtálak lassan terjedő rezgései lelassítanak — nem csinálnak
+              semmit, csak teret adnak annak, ami már jelen van.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 ASZTROZÓFIA -->
+      <article class="panel panel--astro" data-panel>
+        <div class="panel__media" data-reveal="clip">
+          <img
+            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=1800&amp;q=75"
+            srcset="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=900&amp;q=72 900w,
+                    https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=1800&amp;q=75 1800w,
+                    https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=2400&amp;q=75 2400w"
+            sizes="100vw" width="2400" height="1600" loading="lazy" decoding="async"
+            alt="Csillagos ég a hegyek felett, halvány tejúttal">
+        </div>
+        <div class="panel__veil" aria-hidden="true"></div>
+
+        <svg class="panel__orbit" viewBox="0 0 600 600" aria-hidden="true" focusable="false">
+          <g class="panel__orbit-spin">
+            <ellipse cx="300" cy="300" rx="250" ry="120"></ellipse>
+            <ellipse cx="300" cy="300" rx="190" ry="255" transform="rotate(24 300 300)"></ellipse>
+            <circle cx="300" cy="300" r="7" class="panel__orbit-core"></circle>
+            <circle cx="550" cy="300" r="4" class="panel__orbit-planet"></circle>
+            <circle cx="152" cy="126" r="3" class="panel__orbit-planet"></circle>
+          </g>
+        </svg>
+
+        <div class="panel__inner panel__inner--right">
+          <span class="panel__index" aria-hidden="true">03</span>
+          <div class="panel__body">
+            <p class="eyebrow" data-reveal>Út</p>
+            <h3 class="panel__title panel__title--long" data-lines>
+              <span class="line"><span>Asztrozófiai</span></span>
+              <span class="line"><span>elemzés</span></span>
+            </h3>
+            <p class="panel__line" data-reveal style="--d:.15s">Önismeret egy másik nézőpontból.</p>
+            <p class="panel__text" data-reveal style="--d:.25s">
+              Nem jóslat és nem recept: finom mintázatok, amelyek új kérdéseket
+              nyitnak meg önmagunkkal kapcsolatban.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ 4. INTERAKTÍV HANGTÁL ============ -->
+    <section class="resonance" id="hangtal" aria-labelledby="res-cim" data-resonance>
+      <div class="resonance__sticky">
+        <div class="resonance__glow" aria-hidden="true" data-glow></div>
+
+        <p class="eyebrow resonance__eyebrow">Hangtálterápia</p>
+
+        <div class="resonance__stage" aria-hidden="true">
+          <span class="wave" style="--i:0"></span>
+          <span class="wave" style="--i:1"></span>
+          <span class="wave" style="--i:2"></span>
+          <span class="wave" style="--i:3"></span>
+          <span class="wave" style="--i:4"></span>
+          <span class="wave" style="--i:5"></span>
+
+          <svg class="resonance__bowl" viewBox="0 0 420 300" focusable="false">
+            <defs>
+              <linearGradient id="bowlBody" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#D8C09A"/>
+                <stop offset="38%" stop-color="#A9885B"/>
+                <stop offset="74%" stop-color="#6B5639"/>
+                <stop offset="100%" stop-color="#42361F"/>
+              </linearGradient>
+              <linearGradient id="bowlRim" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#8E7551"/>
+                <stop offset="35%" stop-color="#E4D2AF"/>
+                <stop offset="65%" stop-color="#B89769"/>
+                <stop offset="100%" stop-color="#7C6444"/>
+              </linearGradient>
+              <radialGradient id="bowlGlow" cx="50%" cy="45%" r="55%">
+                <stop offset="0%" stop-color="#B89769" stop-opacity=".38"/>
+                <stop offset="100%" stop-color="#B89769" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <ellipse cx="210" cy="150" rx="205" ry="140" fill="url(#bowlGlow)"/>
+            <ellipse cx="210" cy="266" rx="140" ry="17" fill="#05080B" opacity=".6"/>
+            <path d="M84 158 C88 224 138 260 210 260 C282 260 332 224 336 158 Z" fill="url(#bowlBody)"/>
+            <path d="M84 158 C88 224 138 260 210 260 C282 260 332 224 336 158" fill="none" stroke="#F6ECD9" stroke-opacity=".38" stroke-width="1.4"/>
+            <ellipse cx="210" cy="158" rx="126" ry="30" fill="url(#bowlRim)"/>
+            <ellipse cx="210" cy="158" rx="108" ry="23" fill="#0B1015" opacity=".7"/>
+            <ellipse cx="210" cy="158" rx="108" ry="23" fill="none" stroke="#0B1015" stroke-opacity=".55" stroke-width="1"/>
+            <path d="M124 150 A126 30 0 0 1 236 134" fill="none" stroke="#F6ECD9" stroke-opacity=".5" stroke-width="2" stroke-linecap="round"/>
+            <path d="M152 176 C164 200 188 214 216 214" fill="none" stroke="#F2EEE7" stroke-opacity=".12" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <h2 class="resonance__text" id="res-cim" data-lines>
+          <span class="line"><span>Néha nem több válaszra</span></span>
+          <span class="line"><span>van szükség.</span></span>
+          <span class="line"><span class="accent">Hanem több csendre.</span></span>
+        </h2>
+
+        <p class="resonance__note">Görgess — a rezgés lassan terjed</p>
+      </div>
+    </section>
+
+    <!-- ============ 5. A JÓGA ÚTJA ============ -->
+    <section class="story" id="tortenet" aria-labelledby="story-cim" data-story>
+      <div class="story__bg" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&amp;fit=crop&amp;w=1600&amp;q=70"
+          width="1600" height="1067" loading="lazy" decoding="async" alt="">
+      </div>
+
+      <div class="story__inner">
+        <header class="story__head">
+          <p class="eyebrow" data-reveal>A jóga útja</p>
+          <h2 class="story__title" id="story-cim" data-lines>
+            <span class="line"><span>Nem egy vonal,</span></span>
+            <span class="line"><span>hanem egy folyamat.</span></span>
+          </h2>
+        </header>
+
+        <div class="timeline">
+          <span class="timeline__track" aria-hidden="true"></span>
+          <span class="timeline__progress" data-timeline aria-hidden="true"></span>
+
+          <ol class="timeline__list">
+            <li class="timeline__item" data-reveal>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <p class="timeline__num" aria-hidden="true">01</p>
+              <h3>A találkozás</h3>
+              <p>A jóga Budapesten, mélyebben: nem gyakorlatként, hanem találkozásként egy másfajta figyelemmel.</p>
+            </li>
+            <li class="timeline__item" data-reveal>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <p class="timeline__num" aria-hidden="true">02</p>
+              <h3>Keleti filozófiák</h3>
+              <p>A jóga mögötti gondolkodás tanulmányozása — a nézőpontok lassú, kimért tágulása.</p>
+            </li>
+            <li class="timeline__item" data-reveal>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <p class="timeline__num" aria-hidden="true">03</p>
+              <h3>Az első lépések</h3>
+              <p>Mezősi Anna vezetésével, biztos alapokkal letéve a saját út első köveit.</p>
+            </li>
+            <li class="timeline__item" data-reveal>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <p class="timeline__num" aria-hidden="true">04</p>
+              <h3>Oktatóképzés</h3>
+              <p>Nemzetközi tanároktól tanulva, a hagyományok szélesebb palettáját megismerve.</p>
+            </li>
+            <li class="timeline__item" data-reveal>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <p class="timeline__num" aria-hidden="true">05</p>
+              <h3>Papp József és Kádár Zoltán</h3>
+              <p>Későbbi képzések, amelyek tovább finomították és mélyítették a szemléletet.</p>
+            </li>
+            <li class="timeline__item" data-reveal>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <p class="timeline__num" aria-hidden="true">06</p>
+              <h3>Himalájai Jóga Tradíció</h3>
+              <p>Jógaoktatóként a Himalájai Jóga Tradíció szellemiségében folytatódó munka.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. NÉZŐPONTVÁLTÁS ============ -->
+    <section class="shift" id="nezopont" aria-labelledby="shift-cim" data-shift>
+      <div class="shift__media" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&amp;fit=crop&amp;w=2000&amp;q=72"
+          srcset="https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&amp;fit=crop&amp;w=1000&amp;q=70 1000w,
+                  https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&amp;fit=crop&amp;w=2000&amp;q=72 2000w"
+          sizes="100vw" width="2000" height="1333" loading="lazy" decoding="async" alt="">
+      </div>
+      <div class="shift__veil" aria-hidden="true"></div>
+      <svg class="shift__arc" viewBox="0 0 800 800" aria-hidden="true" focusable="false">
+        <circle cx="400" cy="400" r="330"></circle>
+        <circle cx="400" cy="400" r="240" stroke-dasharray="2 14"></circle>
+        <path d="M400 46 L440 70 L400 94 Z"></path>
+      </svg>
+
+      <div class="shift__inner">
+        <p class="eyebrow" data-reveal>Nézőpontváltás</p>
+        <h2 class="shift__title" id="shift-cim" data-lines>
+          <span class="line"><span>Néha 180°-os</span></span>
+          <span class="line"><span>fordulat kell</span></span>
+          <span class="line"><span>ahhoz, hogy ugyanazt</span></span>
+          <span class="line"><span>teljesen másként lássuk.</span></span>
+        </h2>
+        <p class="shift__note" data-reveal style="--d:.3s">
+          A jóga nálam erről szól: nem a világ megváltoztatásáról, hanem arról,
+          hogy máshonnan nézünk rá.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 7. ASZTROZÓFIA ============ -->
+    <section class="astro" id="asztrozofia" aria-labelledby="astro-cim" data-astro>
+      <div class="astro__viz" aria-hidden="true">
+        <svg viewBox="0 0 900 900" focusable="false">
+          <g class="astro__grid">
+            <line x1="0" y1="450" x2="900" y2="450"></line>
+            <line x1="450" y1="0" x2="450" y2="900"></line>
+            <line x1="0" y1="300" x2="900" y2="300"></line>
+            <line x1="0" y1="600" x2="900" y2="600"></line>
+            <line x1="300" y1="0" x2="300" y2="900"></line>
+            <line x1="600" y1="0" x2="600" y2="900"></line>
+          </g>
+
+          <g class="astro__orbits" data-depth="0.35">
+            <ellipse cx="450" cy="450" rx="380" ry="170" transform="rotate(-18 450 450)"></ellipse>
+            <ellipse cx="450" cy="450" rx="300" ry="300"></ellipse>
+            <ellipse cx="450" cy="450" rx="180" ry="355" transform="rotate(32 450 450)"></ellipse>
+          </g>
+
+          <g class="astro__chart" data-depth="0.6">
+            <path d="M212 566 L330 470 L418 528 L512 372 L614 430 L702 318"></path>
+            <circle cx="212" cy="566" r="5"></circle>
+            <circle cx="330" cy="470" r="3.4"></circle>
+            <circle cx="418" cy="528" r="4.2"></circle>
+            <circle cx="512" cy="372" r="6"></circle>
+            <circle cx="614" cy="430" r="3.4"></circle>
+            <circle cx="702" cy="318" r="4.6"></circle>
+          </g>
+
+          <g class="astro__stars" data-depth="0.9">
+            <circle cx="150" cy="220" r="2.4"></circle>
+            <circle cx="268" cy="160" r="1.6"></circle>
+            <circle cx="392" cy="242" r="2.8"></circle>
+            <circle cx="560" cy="180" r="2"></circle>
+            <circle cx="672" cy="238" r="1.6"></circle>
+            <circle cx="774" cy="176" r="2.6"></circle>
+            <circle cx="186" cy="392" r="1.8"></circle>
+            <circle cx="122" cy="700" r="2.4"></circle>
+            <circle cx="300" cy="672" r="1.6"></circle>
+            <circle cx="452" cy="742" r="2.6"></circle>
+            <circle cx="606" cy="676" r="1.8"></circle>
+            <circle cx="742" cy="722" r="2.4"></circle>
+            <circle cx="820" cy="500" r="1.8"></circle>
+            <circle cx="80" cy="470" r="1.6"></circle>
+          </g>
+
+          <g class="astro__ring" data-depth="0.2">
+            <circle cx="450" cy="450" r="418" stroke-dasharray="1 12"></circle>
+          </g>
+        </svg>
+      </div>
+
+      <div class="astro__content">
+        <p class="eyebrow" data-reveal>Asztrozófia</p>
+        <h2 class="astro__title" id="astro-cim" data-lines>
+          <span class="line"><span>Mintázatok.</span></span>
+          <span class="line"><span>Összefüggések.</span></span>
+          <span class="line"><span class="accent">Önismeret.</span></span>
+        </h2>
+        <p class="astro__text" data-reveal style="--d:.25s">
+          Az asztrozófia a születés adataiból épített mintázatokat figyeli meg.
+          Nem jóslat, nem diagnózis és nem ígéret — hanem egy másik nézőpont,
+          amelyből közelebbről láthatóvá válik, hogyan kapcsolódnak össze a
+          dolgok.
+        </p>
+        <a class="btn btn--ghost" href="mailto:rgabca@gmail.com?subject=Asztroz%C3%B3fiai%20elemz%C3%A9s%20%E2%80%94%20%C3%A9rdekl%C5%91d%C3%A9s" data-magnetic data-reveal style="--d:.4s">
+          Érdeklődöm az elemzésről
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ 8. KAPCSOLAT ============ -->
+    <section class="cta" id="kapcsolat" aria-labelledby="cta-cim">
+      <div class="cta__inner">
+        <div class="cta__body">
+          <p class="eyebrow eyebrow--dark" data-reveal>Kapcsolat</p>
+          <h2 class="cta__title" id="cta-cim" data-lines>
+            <span class="line"><span>Adj magadnak</span></span>
+            <span class="line"><span>időt a megérkezésre.</span></span>
+          </h2>
+          <p class="cta__lead" data-reveal style="--d:.2s">
+            Ha úgy érzed, itt az ideje lelassulni, írj nyugodtan.
+            Halászteleken, Budapest közelében találkozunk.
+          </p>
+
+          <div class="cta__actions" data-reveal style="--d:.35s">
+            <a class="btn btn--dark" href="mailto:rgabca@gmail.com" data-magnetic>Kapcsolatfelvétel</a>
+          </div>
+
+          <p class="cta__services" data-reveal style="--d:.5s">
+            Jóga <i></i> Hangtálterápia <i></i> Asztrozófiai elemzés
+          </p>
+          <p class="cta__mail" data-reveal style="--d:.6s">
+            <a href="mailto:rgabca@gmail.com">rgabca@gmail.com</a>
+          </p>
+        </div>
+
+        <figure class="cta__figure media-reveal" data-reveal="clip">
+          <div class="media-reveal__inner" data-parallax="0.06">
+            <img
+              src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&amp;fit=crop&amp;w=1200&amp;q=75"
+              srcset="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&amp;fit=crop&amp;w=700&amp;q=72 700w,
+                      https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&amp;fit=crop&amp;w=1200&amp;q=75 1200w"
+              sizes="(max-width: 900px) 100vw, 40vw"
+              width="1200" height="800" loading="lazy" decoding="async"
+              alt="Napfény szűrődik át egy öreg fa lombkoronáján">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <p class="footer__name">Rappi Gabriella</p>
+          <p class="footer__tag">Jóga · Hangtál · Asztrozófia</p>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__label">Helyszín</p>
+          <p>Halásztelek<br><span class="muted">Budapest környéke</span></p>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__label">E-mail</p>
+          <p><a href="mailto:rgabca@gmail.com">rgabca@gmail.com</a></p>
+        </div>
+
+        <div class="footer__col footer__col--end">
+          <a class="footer__top" href="#hero">Vissza az elejére</a>
+        </div>
+      </div>
+      <p class="footer__legal">© <span data-year>2026</span> Rappi Gabriella · Minden jog fenntartva</p>
+    </footer>
+
+  </div><!-- /.after -->
+</main>
+
+<noscript>
+  <style>
+    [data-reveal]{opacity:1 !important;transform:none !important;clip-path:none !important}
+    .line>span{transform:none !important}
+    .timeline__progress{transform:scaleY(1) !important}
+  </style>
+</noscript>
+
+<script id="app-js">
+/* =========================================================================
+   Rappi Gabriella — látványterv
+   Scroll-vezérelt mozgás, parallax, rezgés. Nincs külső függőség.
+   ========================================================================= */
+(function () {
+  'use strict';
+
+  var mqReduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var mqFine   = window.matchMedia('(hover: hover) and (pointer: fine)');
+  var reduce   = mqReduce.matches;
+  var fine     = mqFine.matches;
+
+  /* Opcionális demo-kapcsoló: ?motion=force
+     Rendszerszintű reduced-motion mellett is lejátssza a mozgást
+     (pl. látványterv-bemutatóhoz). Normál látogatót nem érint. */
+  try {
+    if (window.location.search.indexOf('motion=force') !== -1) {
+      window.sessionStorage.setItem('motionForce', '1');
+      reduce = false;
+    } else if (window.sessionStorage.getItem('motionForce') === '1') {
+      reduce = false;
+    }
+  } catch (e) { /* privát mód */ }
+
+  var clamp = function (v, a, b) { return v < a ? a : (v > b ? b : v); };
+  var $  = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+
+  /* ---------------------------------------------------------------
+     Év a footerben
+  --------------------------------------------------------------- */
+  var yearEl = $('[data-year]');
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+  /* ---------------------------------------------------------------
+     Mobil menü
+  --------------------------------------------------------------- */
+  (function menu() {
+    var toggle = $('[data-menu-toggle]');
+    var panel  = $('[data-menu]');
+    if (!toggle || !panel) return;
+
+    var open = false;
+    var timer = null;
+
+    function setOpen(next) {
+      open = next;
+      toggle.setAttribute('aria-expanded', String(next));
+      toggle.setAttribute('aria-label', next ? 'Menü bezárása' : 'Menü megnyitása');
+      document.body.style.overflow = next ? 'hidden' : '';
+
+      if (next) {
+        if (timer) { clearTimeout(timer); timer = null; }
+        panel.hidden = false;
+        // következő frame: indulhasson az átmenet
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () { panel.classList.add('is-open'); });
+        });
+        var first = $('a', panel);
+        if (first) setTimeout(function () { first.focus({ preventScroll: true }); }, 420);
+      } else {
+        panel.classList.remove('is-open');
+        timer = setTimeout(function () {
+          if (!panel.classList.contains('is-open')) panel.hidden = true;
+        }, 900);
+      }
+    }
+
+    toggle.addEventListener('click', function () { setOpen(!open); });
+
+    $$('a', panel).forEach(function (a) {
+      a.addEventListener('click', function () { if (open) setOpen(false); });
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && open) { setOpen(false); toggle.focus(); }
+    });
+
+    window.addEventListener('resize', function () {
+      if (open && window.innerWidth > 980) setOpen(false);
+    }, { passive: true });
+  })();
+
+  /* ---------------------------------------------------------------
+     Nav állapot + felfedések (IntersectionObserver)
+  --------------------------------------------------------------- */
+  var nav = $('[data-nav]');
+
+  var revealIO = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-in');
+        revealIO.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0, rootMargin: '0px 0px -12% 0px' });
+
+  $$('[data-reveal], [data-lines]').forEach(function (el) { revealIO.observe(el); });
+
+  var activeIO = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      e.target.classList.toggle('is-active', e.isIntersecting);
+    });
+  }, { threshold: 0.28 });
+
+  $$('[data-panel]').forEach(function (el) { activeIO.observe(el); });
+
+  /* ---------------------------------------------------------------
+     Elemek a scroll-höz
+  --------------------------------------------------------------- */
+  var hero      = $('[data-hero]');
+  var parallax  = $$('[data-parallax]');
+  var story     = $('[data-story]');
+  var timeline  = $('[data-timeline]');
+  var shift     = $('[data-shift]');
+  var resonance = $('[data-resonance]');
+  var waves     = $$('.wave');
+  var glow      = $('[data-glow]');
+  var astro     = $('[data-astro]');
+  var astroGrps = astro ? $$('[data-depth]', astro) : [];
+  var magnets   = $$('[data-magnetic]');
+
+  var vh = window.innerHeight;
+  var mouseX = window.innerWidth * 0.5, mouseY = window.innerHeight * 0.5;
+  var glowX = mouseX, glowY = mouseY, glowTX = mouseX, glowTY = mouseY;
+  var astroNX = 0, astroNY = 0, astroTX = 0, astroTY = 0;
+
+  function onResize() { vh = window.innerHeight; requestFrame(); }
+  window.addEventListener('resize', onResize, { passive: true });
+  window.addEventListener('orientationchange', onResize, { passive: true });
+
+  if (fine) {
+    window.addEventListener('pointermove', function (e) {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      if (glow) { glowTX = mouseX; glowTY = mouseY; }
+      if (astro) {
+        var r = astro.getBoundingClientRect();
+        if (r.bottom > -200 && r.top < vh + 200) {
+          astroTX = clamp((e.clientX - (r.left + r.width * 0.62)) / (r.width * 0.5), -1, 1);
+          astroTY = clamp((e.clientY - (r.top + r.height * 0.5)) / (r.height * 0.5), -1, 1);
+        }
+      }
+      requestFrame();
+    }, { passive: true });
+  }
+
+  /* ---------------------------------------------------------------
+     Magnetic gombok — csak asztali, csak finom mutatóval
+  --------------------------------------------------------------- */
+  var magnetState = [];
+  if (fine && !reduce) {
+    magnets.forEach(function (el) {
+      var m = { el: el, x: 0, y: 0, tx: 0, ty: 0 };
+      el.addEventListener('pointermove', function (e) {
+        var r = el.getBoundingClientRect();
+        m.tx = (e.clientX - (r.left + r.width / 2)) * 0.24;
+        m.ty = (e.clientY - (r.top + r.height / 2)) * 0.34;
+        requestFrame();
+      });
+      el.addEventListener('pointerleave', function () {
+        m.tx = 0; m.ty = 0; requestFrame();
+      });
+      magnetState.push(m);
+    });
+  }
+
+  /* ---------------------------------------------------------------
+     Egyetlen rAF hurk — csak akkor fut, amikor kell
+  --------------------------------------------------------------- */
+  var frameQueued = false;
+
+  function requestFrame() {
+    if (frameQueued) return;
+    frameQueued = true;
+    requestAnimationFrame(frame);
+  }
+
+  function frame() {
+    frameQueued = false;
+    if (update()) requestFrame();
+  }
+
+  function update() {
+    var moving = false;
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+
+    /* nav */
+    if (nav) nav.classList.toggle('is-scrolled', y > 40);
+
+    if (reduce) return false;
+
+    /* --- HERO: zoom + sötétítés + cinematic átmenet --- */
+    if (hero) {
+      var p = clamp(y / Math.max(vh, 1), 0, 1);
+      hero.style.setProperty('--p', p.toFixed(4));
+    }
+
+    /* --- Parallax képek --- */
+    for (var i = 0; i < parallax.length; i++) {
+      var el = parallax[i];
+      var r = el.getBoundingClientRect();
+      if (r.bottom < -120 || r.top > vh + 120) continue;
+      var depth = parseFloat(el.getAttribute('data-parallax')) || 0.08;
+      var center = r.top + r.height / 2 - vh / 2;
+      el.style.transform = 'translate3d(0,' + (-center * depth).toFixed(2) + 'px,0)';
+    }
+
+    /* --- STORY: háttérparallax + vonalrajzolás --- */
+    if (story) {
+      var rs = story.getBoundingClientRect();
+      if (rs.bottom > -200 && rs.top < vh + 200) {
+        var sp = clamp((vh - rs.top) / (vh + rs.height), 0, 1);
+        story.style.setProperty('--sp', sp.toFixed(4));
+      }
+    }
+    if (timeline) {
+      var rt = timeline.getBoundingClientRect();
+      if (rt.bottom > -200 && rt.top < vh + 200) {
+        var tp = clamp((vh * 0.82 - rt.top) / Math.max(rt.height, 1), 0, 1);
+        timeline.style.transform = 'scaleY(' + tp.toFixed(4) + ')';
+        if (tp > 0 && tp < 1) moving = true;
+      }
+    }
+
+    /* --- SHIFT: finom forgatás / eltolás --- */
+    if (shift) {
+      var rf = shift.getBoundingClientRect();
+      if (rf.bottom > -200 && rf.top < vh + 200) {
+        var np = clamp((vh - rf.top) / (vh + rf.height), 0, 1);
+        shift.style.setProperty('--sp', np.toFixed(4));
+      }
+    }
+
+    /* --- HANGTÁL: scrollból induló hullámok + fénykövetés --- */
+    if (resonance) {
+      var rr = resonance.getBoundingClientRect();
+      if (rr.top < vh && rr.bottom > 0) {
+        var rp = clamp(-rr.top / Math.max(rr.height - vh, 1), 0, 1);
+
+        for (var w = 0; w < waves.length; w++) {
+          var local = rp * 2 - w * 0.18 + 0.1;
+          var scale, alpha;
+          if (local <= 0 || local >= 1) {
+            scale = 1.02; alpha = 0;
+          } else {
+            scale = 1.02 + local;
+            alpha = Math.sin(local * Math.PI) * 0.55;
+          }
+          waves[w].style.transform = 'translate3d(-50%,-50%,0) scale(' + scale.toFixed(3) + ')';
+          waves[w].style.opacity = alpha.toFixed(3);
+        }
+
+        if (glow && fine) {
+          glowX += (glowTX - glowX) * 0.055;
+          glowY += (glowTY - glowY) * 0.055;
+          glow.style.setProperty('--gx', glowX.toFixed(1) + 'px');
+          glow.style.setProperty('--gy', glowY.toFixed(1) + 'px');
+          if (Math.abs(glowTX - glowX) > 0.5 || Math.abs(glowTY - glowY) > 0.5) moving = true;
+        }
+      }
+    }
+
+    /* --- ASZTRO: egérparallax --- */
+    if (astro && fine && astroGrps.length) {
+      astroNX += (astroTX - astroNX) * 0.05;
+      astroNY += (astroTY - astroNY) * 0.05;
+      if (Math.abs(astroTX - astroNX) > 0.002 || Math.abs(astroTY - astroNY) > 0.002) moving = true;
+      for (var g = 0; g < astroGrps.length; g++) {
+        var grp = astroGrps[g];
+        var d = parseFloat(grp.getAttribute('data-depth')) || 0.3;
+        grp.style.transform = 'translate(' + (astroNX * d * 30).toFixed(2) + 'px,' +
+                              (astroNY * d * 30).toFixed(2) + 'px)';
+      }
+    }
+
+    /* --- Magnetic gombok --- */
+    for (var m = 0; m < magnetState.length; m++) {
+      var ms = magnetState[m];
+      ms.x += (ms.tx - ms.x) * 0.16;
+      ms.y += (ms.ty - ms.y) * 0.16;
+      if (Math.abs(ms.tx - ms.x) > 0.1 || Math.abs(ms.ty - ms.y) > 0.1) moving = true;
+      ms.el.style.transform = 'translate3d(' + ms.x.toFixed(2) + 'px,' + ms.y.toFixed(2) + 'px,0)';
+    }
+
+    return moving;
+  }
+
+  /* ---------------------------------------------------------------
+     Indítás
+  --------------------------------------------------------------- */
+  window.addEventListener('scroll', requestFrame, { passive: true });
+  window.addEventListener('load', function () { update(); requestFrame(); });
+  update();
+  requestFrame();
+
+  mqReduce.addEventListener && mqReduce.addEventListener('change', function (e) {
+    /* demo-mód (?motion=force) felülírja a rendszerszintű beállítást */
+    var forced = false;
+    try { forced = window.sessionStorage.getItem('motionForce') === '1'; } catch (err) {}
+    reduce = e.matches && !forced;
+    requestFrame();
+  });
+  mqFine.addEventListener && mqFine.addEventListener('change', function (e) {
+    fine = e.matches;
+  });
+})();
+</script>
+</body>
+</html>
