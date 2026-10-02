@@ -211,6 +211,7 @@ section{scroll-margin-top:4.5rem}
   color:var(--paper);
   overflow:hidden;
   isolation:isolate;
+  text-align:center;
   transition:
     color .45s var(--ease),
     border-color .45s var(--ease),
@@ -429,7 +430,7 @@ section{scroll-margin-top:4.5rem}
   line-height:.93;
   letter-spacing:-.025em;
   color:var(--paper);
-  margin:clamp(1.4rem,3.4vh,2.4rem) 0 clamp(1.6rem,3.6vh,2.6rem);
+  margin:max(clamp(1.4rem,3.4vh,2.4rem),calc(env(safe-area-inset-top,0px) + 1.2rem)) 0 clamp(1.6rem,3.6vh,2.6rem);
   --d:.3s;
   text-shadow:0 18px 60px rgba(4,7,10,.55);
 }
@@ -664,6 +665,24 @@ section{scroll-margin-top:4.5rem}
   font-size:clamp(.96rem,1.1vw,1.05rem);
 }
 
+/* visszafogott panel CTA */
+.panel__cta{
+  display:inline-flex;align-items:center;gap:.65rem;
+  margin-top:clamp(1.5rem,3vh,2.1rem);
+  font-size:.7rem;font-weight:500;
+  letter-spacing:.24em;text-transform:uppercase;
+  color:var(--copper);
+  padding-bottom:.45rem;
+  border-bottom:1px solid rgba(184,151,105,.35);
+  transition:color .45s var(--ease),border-color .45s var(--ease);
+}
+.panel__cta::after{
+  content:"";width:1.4rem;height:1px;background:currentColor;
+  transition:width .45s var(--ease);
+}
+.panel__cta:hover,.panel__cta:focus-visible{color:var(--paper);border-color:rgba(242,238,231,.6)}
+.panel__cta:hover::after,.panel__cta:focus-visible::after{width:2.2rem}
+
 /* panel 02 — split composition + rings */
 .panel--bowl .panel__veil{
   background:linear-gradient(100deg,rgba(8,12,16,.95) 0%,rgba(8,12,16,.78) 42%,rgba(8,12,16,.35) 100%);
@@ -883,8 +902,23 @@ section{scroll-margin-top:4.5rem}
   color:var(--paper);
   margin-bottom:.6rem;
   letter-spacing:-.01em;
+  overflow-wrap:break-word;
+  hyphens:auto;
+  -webkit-hyphens:auto;
 }
 .timeline__item p:last-child{color:var(--text-soft);font-size:clamp(.95rem,1.1vw,1.04rem)}
+
+.story__cta{
+  margin-top:clamp(2.2rem,6vh,3.6rem);
+  padding-top:clamp(1.6rem,4vh,2.4rem);
+  border-top:1px solid var(--line-soft);
+}
+.story__cta .panel__cta{font-size:.68rem}
+
+@media (max-width:760px){
+  .story__cta{margin-top:2rem;padding-top:1.5rem}
+  .story__cta .panel__cta{white-space:normal;line-height:1.5;padding-bottom:.4rem}
+}
 
 /* ---------- 15. SHIFT / NÉZŐPONTVÁLTÁS ---------- */
 .shift{
@@ -1162,8 +1196,8 @@ section{scroll-margin-top:4.5rem}
 @media (max-width:760px){
   :root{--pad:clamp(1.15rem,6vw,2rem)}
 
-  .hero__inner{transform:translate3d(0,calc(-42% + var(--p,0) * -5vh),0)}
-  .hero__title{font-size:clamp(3.1rem,15vw,5rem);margin-top:1.1rem}
+  .hero__inner{transform:translate3d(0,calc(-44% + var(--p,0) * -5vh),0)}
+  .hero__title{font-size:clamp(3.1rem,15vw,5rem);margin-top:max(1.4rem,env(safe-area-inset-top,0px))}
   .hero__title .line:nth-child(2){padding-left:.1em}
   .hero__place{display:none}
   .br-desk{display:none}
@@ -1191,16 +1225,24 @@ section{scroll-margin-top:4.5rem}
   .panel__orbit{top:30%;left:50%;transform:translate(-50%,-50%);width:min(96vw,460px);height:min(96vw,460px);opacity:.45}
   @keyframes slowSpin{to{transform:translate(-50%,-50%) rotate(360deg)}}
 
-  .resonance{height:210svh}
+  .resonance{height:150svh}
   .resonance__stage{width:min(74vw,340px)}
   .resonance__glow{display:none}
   .resonance__text{font-size:clamp(1.55rem,7vw,2.3rem);max-width:16ch}
   .resonance__note{font-size:.56rem;letter-spacing:.24em}
   .resonance__eyebrow{top:clamp(5.5rem,12vh,7rem)}
 
-  .timeline{--tl-pad:1.6rem}
+  .timeline{--tl-pad:1.6rem;margin-top:2.2rem}
+  .timeline__list{gap:1.7rem}
   .timeline__item{margin-left:0 !important;max-width:100%}
   .timeline__dot{left:calc(-1 * var(--tl-pad) - 4.5px)}
+
+  .intro{padding-top:4.5rem;padding-bottom:4rem}
+  .paths__head{padding-top:3.2rem;padding-bottom:2.4rem}
+  .story{padding-top:4.5rem;padding-bottom:5rem}
+  .shift{padding-top:6.5rem;padding-bottom:5.5rem;min-height:94svh}
+  .astro{padding-top:5.5rem;padding-bottom:5.5rem}
+  .cta{padding-top:4.5rem;padding-bottom:4.5rem}
 
   .shift{padding-top:clamp(7rem,20vh,10rem);padding-bottom:clamp(6rem,16vh,8rem)}
   .shift__title{font-size:clamp(2.05rem,9vw,3.2rem);max-width:100%}
@@ -1354,12 +1396,12 @@ section{scroll-margin-top:4.5rem}
         </h1>
 
         <p class="hero__lead" data-reveal style="--d:.85s">
-          Egy tér, ahol egy időre elcsendesedik a külvilág,<br class="br-desk">
-          és újra figyelmet kaphat az, ami belül történik.
+          Egy tér, ahol egy időre elcsendesedik a külvilág — és újra
+          figyelmet kaphat az, ami belül történik.
         </p>
 
         <div class="hero__actions" data-reveal style="--d:1.05s">
-          <a class="btn btn--solid" href="#utak" data-magnetic>Fedezd fel</a>
+          <a class="btn btn--solid" href="#utak" data-magnetic>Ismerd meg a lehetőségeket</a>
           <a class="btn btn--ghost" href="#kapcsolat" data-magnetic>Kapcsolat</a>
         </div>
       </div>
@@ -1404,9 +1446,10 @@ section{scroll-margin-top:4.5rem}
 
           <div class="intro__text" data-reveal style="--d:.2s">
             <p>
-              Rappi Gabriella a jógával Budapesten találkozott mélyebben — nem
-              gyakorlatként, hanem gondolkodásként. A keleti filozófia és a jóga
-              hosszú éveken át formálta a nézőpontját.
+              Gabriella Budapesten kezdett el mélyebben foglalkozni a jógával,
+              amely idővel nemcsak gyakorlattá, hanem szemléletmóddá is vált
+              számára. A keleti filozófia és a jóga gondolkodása hosszú éveken
+              át formálta a nézőpontját.
             </p>
             <p>
               Az első lépéseket Mezősi Anna vezetésével tette, később az
@@ -1461,6 +1504,7 @@ section{scroll-margin-top:4.5rem}
               A test itt nem cél, hanem kapu: a figyelem lassan visszatalálja a
               helyét, a légzés pedig rendet tesz a nap közepén.
             </p>
+            <a class="panel__cta" href="#kapcsolat" data-reveal style="--d:.35s">Érdekel</a>
           </div>
         </div>
       </article>
@@ -1492,9 +1536,11 @@ section{scroll-margin-top:4.5rem}
             <h3 class="panel__title" data-lines><span class="line"><span>Hangtál</span></span></h3>
             <p class="panel__line" data-reveal style="--d:.15s">A csend és a rezgés találkozása.</p>
             <p class="panel__text" data-reveal style="--d:.25s">
-              A hangtálak lassan terjedő rezgései lelassítanak — nem csinálnak
-              semmit, csak teret adnak annak, ami már jelen van.
+              A hangtálak lassan kibontakozó rezgései segítenek kizökkenni a
+              mindennapi zajból, és teret teremtenek a csendnek, a figyelemnek
+              és a megérkezésnek.
             </p>
+            <a class="panel__cta" href="#hangtal" data-reveal style="--d:.35s">Tudj meg többet</a>
           </div>
         </div>
       </article>
@@ -1535,6 +1581,7 @@ section{scroll-margin-top:4.5rem}
               Nem jóslat és nem recept: finom mintázatok, amelyek új kérdéseket
               nyitnak meg önmagunkkal kapcsolatban.
             </p>
+            <a class="panel__cta" href="#asztrozofia" data-reveal style="--d:.35s">Tudj meg többet</a>
           </div>
         </div>
       </article>
@@ -1657,6 +1704,10 @@ section{scroll-margin-top:4.5rem}
             </li>
           </ol>
         </div>
+
+        <div class="story__cta" data-reveal style="--d:.1s">
+          <a class="panel__cta" href="mailto:rgabca@gmail.com?subject=%C3%89rdekl%C5%91d%C3%A9s">Ha úgy érzed, ez a te utad is — írj Gabriellának</a>
+        </div>
       </div>
     </section>
 
@@ -1777,7 +1828,7 @@ section{scroll-margin-top:4.5rem}
           </p>
 
           <div class="cta__actions" data-reveal style="--d:.35s">
-            <a class="btn btn--dark" href="mailto:rgabca@gmail.com" data-magnetic>Kapcsolatfelvétel</a>
+            <a class="btn btn--dark" href="mailto:rgabca@gmail.com?subject=%C3%8Dras%20Gabriell%C3%A1nak" data-magnetic>Írok Gabriellának</a>
           </div>
 
           <p class="cta__services" data-reveal style="--d:.5s">
@@ -1962,11 +2013,23 @@ section{scroll-margin-top:4.5rem}
   var magnets   = $$('[data-magnetic]');
 
   var vh = window.innerHeight;
+  var vw = window.innerWidth || document.documentElement.clientWidth;
+  /* mobilon visszafogottabb mozgás: kevesebb amplitúdó, kevesebb hullám */
+  var mobile = vw < 760;
+  var AMP = mobile ? 0.6 : 1;
+  var waveCount = Math.max(3, waves.length - (mobile ? 3 : 0));
   var mouseX = window.innerWidth * 0.5, mouseY = window.innerHeight * 0.5;
   var glowX = mouseX, glowY = mouseY, glowTX = mouseX, glowTY = mouseY;
   var astroNX = 0, astroNY = 0, astroTX = 0, astroTY = 0;
 
-  function onResize() { vh = window.innerHeight; requestFrame(); }
+  function onResize() {
+    vh = window.innerHeight;
+    vw = window.innerWidth || document.documentElement.clientWidth;
+    var wasMobile = mobile;
+    mobile = vw < 760;
+    if (mobile !== wasMobile) { AMP = mobile ? 0.6 : 1; waveCount = Math.max(3, waves.length - (mobile ? 3 : 0)); }
+    requestFrame();
+  }
   window.addEventListener('resize', onResize, { passive: true });
   window.addEventListener('orientationchange', onResize, { passive: true });
 
@@ -2079,7 +2142,7 @@ section{scroll-margin-top:4.5rem}
       if (rr.top < vh && rr.bottom > 0) {
         var rp = clamp(-rr.top / Math.max(rr.height - vh, 1), 0, 1);
 
-        for (var w = 0; w < waves.length; w++) {
+        for (var w = 0; w < waveCount; w++) {
           var local = rp * 2 - w * 0.18 + 0.1;
           var scale, alpha;
           if (local <= 0 || local >= 1) {
@@ -2110,8 +2173,8 @@ section{scroll-margin-top:4.5rem}
       for (var g = 0; g < astroGrps.length; g++) {
         var grp = astroGrps[g];
         var d = parseFloat(grp.getAttribute('data-depth')) || 0.3;
-        grp.style.transform = 'translate(' + (astroNX * d * 30).toFixed(2) + 'px,' +
-                              (astroNY * d * 30).toFixed(2) + 'px)';
+        grp.style.transform = 'translate(' + (astroNX * d * 30 * AMP).toFixed(2) + 'px,' +
+                              (astroNY * d * 30 * AMP).toFixed(2) + 'px)';
       }
     }
 

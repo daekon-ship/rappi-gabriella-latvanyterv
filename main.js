@@ -121,11 +121,23 @@
   var magnets   = $$('[data-magnetic]');
 
   var vh = window.innerHeight;
+  var vw = window.innerWidth || document.documentElement.clientWidth;
+  /* mobilon visszafogottabb mozgás: kevesebb amplitúdó, kevesebb hullám */
+  var mobile = vw < 760;
+  var AMP = mobile ? 0.6 : 1;
+  var waveCount = Math.max(3, waves.length - (mobile ? 3 : 0));
   var mouseX = window.innerWidth * 0.5, mouseY = window.innerHeight * 0.5;
   var glowX = mouseX, glowY = mouseY, glowTX = mouseX, glowTY = mouseY;
   var astroNX = 0, astroNY = 0, astroTX = 0, astroTY = 0;
 
-  function onResize() { vh = window.innerHeight; requestFrame(); }
+  function onResize() {
+    vh = window.innerHeight;
+    vw = window.innerWidth || document.documentElement.clientWidth;
+    var wasMobile = mobile;
+    mobile = vw < 760;
+    if (mobile !== wasMobile) { AMP = mobile ? 0.6 : 1; waveCount = Math.max(3, waves.length - (mobile ? 3 : 0)); }
+    requestFrame();
+  }
   window.addEventListener('resize', onResize, { passive: true });
   window.addEventListener('orientationchange', onResize, { passive: true });
 
@@ -238,7 +250,7 @@
       if (rr.top < vh && rr.bottom > 0) {
         var rp = clamp(-rr.top / Math.max(rr.height - vh, 1), 0, 1);
 
-        for (var w = 0; w < waves.length; w++) {
+        for (var w = 0; w < waveCount; w++) {
           var local = rp * 2 - w * 0.18 + 0.1;
           var scale, alpha;
           if (local <= 0 || local >= 1) {
@@ -269,8 +281,8 @@
       for (var g = 0; g < astroGrps.length; g++) {
         var grp = astroGrps[g];
         var d = parseFloat(grp.getAttribute('data-depth')) || 0.3;
-        grp.style.transform = 'translate(' + (astroNX * d * 30).toFixed(2) + 'px,' +
-                              (astroNY * d * 30).toFixed(2) + 'px)';
+        grp.style.transform = 'translate(' + (astroNX * d * 30 * AMP).toFixed(2) + 'px,' +
+                              (astroNY * d * 30 * AMP).toFixed(2) + 'px)';
       }
     }
 
