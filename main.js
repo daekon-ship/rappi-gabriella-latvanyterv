@@ -52,10 +52,9 @@
       if (next) {
         if (timer) { clearTimeout(timer); timer = null; }
         panel.hidden = false;
-        // következő frame: indulhasson az átmenet
-        requestAnimationFrame(function () {
-          requestAnimationFrame(function () { panel.classList.add('is-open'); });
-        });
+        // kényszerített reflow, hogy az átmenet biztosan induljon (rAF-független)
+        void panel.offsetHeight;
+        panel.classList.add('is-open');
         var first = $('a', panel);
         if (first) setTimeout(function () { first.focus({ preventScroll: true }); }, 420);
       } else {
