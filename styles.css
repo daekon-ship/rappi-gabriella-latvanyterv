@@ -1193,6 +1193,9 @@ section{scroll-margin-top:4.5rem}
   }
   .panel__title{font-size:clamp(3.1rem,15.5vw,5rem)}
   .panel__title--long{font-size:clamp(2.55rem,11.5vw,3.9rem)}
+  .panel__cta{padding-top:.55rem;margin-top:1rem}
+  .story__cta .panel__cta{padding-top:.55rem}
+  .footer__top{padding:.45rem 0}
   .panel__text{max-width:100%}
   .panel--bowl .panel__veil{background:linear-gradient(to top,rgba(8,12,16,.96) 10%,rgba(8,12,16,.6) 60%,rgba(8,12,16,.4))}
   .panel--astro .panel__veil{background:linear-gradient(to top,rgba(8,12,16,.96) 10%,rgba(8,12,16,.62) 60%,rgba(8,12,16,.4))}
