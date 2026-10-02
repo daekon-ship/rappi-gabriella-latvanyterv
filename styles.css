@@ -157,11 +157,21 @@ section{scroll-margin-top:4.5rem}
 }
 [data-reveal="clip"].is-in{clip-path:inset(0 0 0 0)}
 
-[data-reveal="clip"] img{
+[data-reveal="clip"] .panel__media img,
+[data-reveal="clip"].panel__media img{
   transform:scale(1.16);
   transition:transform 2.1s var(--ease) var(--d,0s);
 }
-[data-reveal="clip"].is-in img{transform:scale(1)}
+[data-reveal="clip"].is-in .panel__media img,
+[data-reveal="clip"].panel__media.is-in img{transform:scale(1)}
+
+/* parallaxos médiaablakok: a keret áll, a zoom-settle a belső ablakon */
+[data-reveal="clip"] .media-reveal__inner{
+  transform:scale(1.16);
+  transition:transform 2.1s var(--ease) var(--d,0s);
+  will-change:transform;
+}
+[data-reveal="clip"].is-in .media-reveal__inner{transform:scale(1)}
 
 /* ---------- 6. BUTTONS ---------- */
 .btn{
@@ -1256,6 +1266,8 @@ section{scroll-margin-top:4.5rem}
   }
   [data-reveal]{opacity:1 !important;transform:none !important;clip-path:none !important}
   .line>span{transform:none !important}
+  .media-reveal__inner,
+  .media-reveal__inner img{transform:none !important}
   .hero__media img,
   .shift__media img,
   .story__bg img{transform:none !important}

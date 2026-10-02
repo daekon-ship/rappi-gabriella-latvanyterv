@@ -207,14 +207,17 @@
       hero.style.setProperty('--p', p.toFixed(4));
     }
 
-    /* --- Parallax képek --- */
+    /* --- Parallax képek: a KÉP csúszik a statikus, levágott ablakban --- */
     for (var i = 0; i < parallax.length; i++) {
       var el = parallax[i];
       var r = el.getBoundingClientRect();
       if (r.bottom < -120 || r.top > vh + 120) continue;
       var depth = parseFloat(el.getAttribute('data-parallax')) || 0.08;
       var center = r.top + r.height / 2 - vh / 2;
-      el.style.transform = 'translate3d(0,' + (-center * depth).toFixed(2) + 'px,0)';
+      var maxShift = r.height * 0.09;
+      var ty = clamp(-center * depth, -maxShift, maxShift);
+      var im = el._pxImg || (el._pxImg = el.querySelector('img'));
+      if (im) im.style.transform = 'translate3d(0,' + ty.toFixed(2) + 'px,0) scale(1.2)';
     }
 
     /* --- STORY: háttérparallax + vonalrajzolás --- */
